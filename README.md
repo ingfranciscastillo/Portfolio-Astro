@@ -71,7 +71,7 @@ Aquí hay algunas capturas de pantalla de mi portafolio:
 ![Captura de Pantalla 1](https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/hero.png)  
 _Inicio del portafolios_
 
-![Captura de Pantalla 2](<https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/captura%20(1).png>)  
+![Captura de Pantalla 2](https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/about.png)  
 _Sobre mi_
 
 ## Redes Sociales 😉
