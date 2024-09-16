@@ -68,14 +68,11 @@ Puedes encontrar más información sobre cómo instalar y utilizar estos iconos 
 
 Aquí hay algunas capturas de pantalla de mi portafolio:
 
-![Captura de Pantalla 1](https://via.placeholder.com/600x400)  
-_Descripción de la imagen 1_
+![Captura de Pantalla 1](https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/hero.png)  
+_Inicio del portafolios_
 
-![Captura de Pantalla 2](https://via.placeholder.com/600x400)  
-_Descripción de la imagen 2_
-
-![Captura de Pantalla 3](https://via.placeholder.com/600x400)  
-_Descripción de la imagen 3_
+![Captura de Pantalla 2](<https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/captura%20(1).png>)  
+_Sobre mi_
 
 ## Redes Sociales 😉
 
