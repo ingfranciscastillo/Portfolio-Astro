@@ -1,0 +1,66 @@
+---
+import Check from "@/icons/check.astro";
+import Copy from "@/icons/Copy.astro";
+import Envelope from "@/icons/Envelope.astro";
+---
+
+<script>
+    const copyEmail = () => {
+        try {
+            navigator.clipboard.writeText('franciscastillocruz@hotmail.com');
+            console.log("copiado")
+        } catch (err) {
+            console.error(err)
+        }
+    }
+
+    const button = document.querySelector('#copyBtn');
+    const $defaultMessage = document.querySelector('#default-message');
+    const $sucessMessage = document.querySelector('#sucess-message');
+
+    button?.addEventListener('click', () => {
+        $defaultMessage?.classList.add('hidden');
+        $sucessMessage?.classList.remove('hidden');
+
+        setTimeout(() => {
+            $defaultMessage?.classList.remove('hidden');
+            $sucessMessage?.classList.add('hidden');
+        }, 2000);
+    });
+    
+</script>
+
+<style>
+    
+</style>
+
+
+<header class="w-4/5 lg:max-w-screen-xl m-10 md:m-16">
+    <div class="hero-top">
+        <h2 class="text-6xl lg:text-9xl font-black text-balance">Hola! Soy Francis Castillo<span class="text-[color:var(--yellow)] ">.</span> </h2>
+        <h2 class="text-6xl font-black text-balance mt-4 mb-10">Desarollador FrontEnd<span class="text-[color:var(--yellow)] ">.</span></h2>
+        <a href="#projectos" class="font-semibold px-4 py-3 bg-[color:var(--blue)] hover:bg-[#12266e] transition duration-300">Projectos</a>
+    </div>
+    <hr class="h-px w-full my-20 bg-[#E3E1E6] border-0">
+    <div class="hero-bottom">
+        <p class="text-balance break text-right leading-8 text-xl">Transformo ideas en experiencias digitales. Desarrollo interfaces modernas, funcionales y optimizadas para cautivar a tus usuarios. ¡Hagamos realidad tu próximo proyecto web!</p>
+        <div class="flex flex-1 items-center justify-end gap-x-5">
+            <a href="#contacto" class="font-semibold mt-10 px-4 py-3 bg-[color:var(--blue)] hover:bg-[#12266e] transition duration-300 flex items-center gap-x-2 cursor-pointer">
+                <Envelope class="size-7"/>
+                Contáctame
+            </a>
+            <button id="copyBtn" class="font-semibold text-[color:var(--bg-color)] mt-10 px-4 py-3 bg-[color:var(--smoke)] hover:text-[color:var(--smoke)] hover:bg-[color:var(--nav-color)] transition duration-300">
+                <span id="default-message" class="flex items-center gap-x-2">
+                    <Copy class="size-7"/>
+                    Copiar Email
+                </span>
+                <span id="sucess-message" class="hidden transition duration-300">
+                    <div class="flex items-center gap-x-2">
+                        <Check class="size-7" />
+                        Copiado!
+                    </div>
+                </span>
+            </button>
+        </div>
+    </div>
+</header>
