@@ -19,7 +19,7 @@ const { image, title, description, link, github } = Astro.props
     <Image loading="lazy" class="h-auto max-w-full object-cover group-hover:brightness-75 transition duration-300" src={image} alt={title} />
     <div class="p-5 mx-auto w-full h-auto absolute bottom-0 left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 bg-zinc-950/70 transition-all duration-300">
         <h2 class="text-xl font-semibold" aria-label={title}> {title} </h2>
-        <p class="text-lg mt-2" aria-label={description}> {description} </p>
+        <p class="text-lg mt-2 text-balance" aria-label={description}> {description} </p>
         <div class="flex flex-1 justify-end items-center">
             <div class="flex gap-x-4">
                 {
