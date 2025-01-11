@@ -1,7 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import Logo from '../../public/Logo.webp'
-
 import Copyright from "@/icons/Copyright.astro";
 import SectionContainer from "./SectionContainer.astro";
 import Github from "@/icons/github.astro";
@@ -22,7 +20,7 @@ import XFooter from "@/icons/XFooter.astro";
         <div class="md:flex md:justify-between">
             <div class="me-3 md:mb-0">
                 <a href="/" class="flex items-center">
-                    <Image loading="lazy" src={Logo} class="size-36" alt="Logo" />
+                    <Image loading="lazy" src="/logo.webp" width={144} height={144} class="size-36" alt="Logo" />
                 </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6">
