@@ -11,7 +11,9 @@ import XFooter from "@/icons/XFooter.astro";
     const Year = document.querySelector("#year");
     document.addEventListener("DOMContentLoaded", () => {
         let currentYear = new Date().getFullYear();
-        Year.textContent = currentYear.toString();
+        if (Year) {
+            Year.textContent = currentYear.toString();
+        }
     })
 </script>
 
