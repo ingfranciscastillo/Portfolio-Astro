@@ -5,20 +5,15 @@ import Envelope from "@/icons/Envelope.astro";
 ---
 
 <script>
-    const copyEmail = () => {
-        try {
-            navigator.clipboard.writeText('franciscastillocruz@hotmail.com');
-            console.log("copiado")
-        } catch (err) {
-            console.error(err)
-        }
-    }
 
     const button = document.querySelector('#copyBtn');
     const $defaultMessage = document.querySelector('#default-message');
     const $sucessMessage = document.querySelector('#sucess-message');
 
     button?.addEventListener('click', () => {
+
+        navigator.clipboard.writeText(import.meta.env.PUBLIC_EMAIL);
+
         $defaultMessage?.classList.add('hidden');
         $sucessMessage?.classList.remove('hidden');
 

@@ -7,7 +7,7 @@ import SectionContainer from "./SectionContainer.astro";
     const submit = document.querySelector("#submit");
 
     submit?.addEventListener("click", () => {
-        form?.reset();
+        (form as HTMLFormElement)?.reset();
     })
 
 </script>
