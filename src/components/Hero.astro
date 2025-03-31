@@ -1,61 +1,22 @@
 ---
-import Check from "@/icons/check.astro";
-import Copy from "@/icons/Copy.astro";
 import Envelope from "@/icons/Envelope.astro";
 ---
 
-<script>
 
-    const button = document.querySelector('#copyBtn');
-    const $defaultMessage = document.querySelector('#default-message');
-    const $sucessMessage = document.querySelector('#sucess-message');
-
-    button?.addEventListener('click', () => {
-
-        navigator.clipboard.writeText(import.meta.env.PUBLIC_EMAIL);
-
-        $defaultMessage?.classList.add('hidden');
-        $sucessMessage?.classList.remove('hidden');
-
-        setTimeout(() => {
-            $defaultMessage?.classList.remove('hidden');
-            $sucessMessage?.classList.add('hidden');
-        }, 2000);
-    });
-    
-</script>
-
-<style>
-    
-</style>
-
-
-<header class="w-4/5 lg:max-w-screen-xl m-10 md:m-16">
+<header class="w-full px-4 sm:px-8 lg:px-16">
     <div class="hero-top">
-        <h2 class="text-6xl lg:text-9xl font-black text-balance">Hola! Soy Francis Castillo<span class="text-[color:var(--yellow)] ">.</span> </h2>
-        <h2 class="text-3xl lg:text-6xl font-normal text-balance mt-4 mb-10">Desarrollador FrontEnd<span class="text-[color:var(--yellow)] ">.</span></h2>
-        <a href="#proyectos" class="font-semibold px-4 py-3 bg-[color:var(--blue)] hover:bg-[#12266e] transition duration-300">Proyectos</a>
+        <h2 data-aos="fade-right" data-aos-delay="300" class="text-6xl lg:text-9xl font-black text-balance">Hola! Soy Francis Castillo<span class="text-[color:var(--yellow)] ">.</span> </h2>
+        <h2 data-aos="fade-right" data-aos-delay="400" class="text-3xl lg:text-6xl font-normal text-balance mt-4 mb-10">Desarrollador FrontEnd<span class="text-[color:var(--yellow)] ">.</span></h2>
+        <a data-aos="fade-right" data-aos-delay="500" href="#proyectos" class="font-semibold px-4 py-3 bg-[color:var(--blue)] hover:bg-[#12266e] transition duration-300">Proyectos</a>
     </div>
     <hr class="h-px w-full my-20 bg-[#E3E1E6] border-0">
     <div class="hero-bottom">
-        <p class="text-balance break text-right leading-relaxed text-xl">Transformo ideas en experiencias digitales. Desarrollo interfaces modernas, funcionales y optimizadas para cautivar a tus usuarios. ¡Hagamos realidad tu próximo proyecto web!</p>
-        <div class="flex flex-1 items-center justify-end gap-x-5">
+        <p data-aos="fade-left" data-aos-delay="300" class="text-balance break text-right leading-relaxed text-xl">Transformo ideas en experiencias digitales. Desarrollo interfaces modernas, funcionales y optimizadas para cautivar a tus usuarios. ¡Hagamos realidad tu próximo proyecto web!</p>
+        <div data-aos="fade-left" data-aos-delay="400" class="flex flex-1 items-center justify-end gap-x-5">
             <a href="#contacto" class="font-semibold mt-10 px-4 py-3 bg-[color:var(--blue)] hover:bg-[#12266e] transition duration-300 flex items-center gap-x-2 cursor-pointer">
                 <Envelope class="size-7"/>
                 Contáctame
             </a>
-            <button id="copyBtn" class="font-semibold text-[color:var(--bg-color)] mt-10 px-4 py-3 bg-[color:var(--smoke)] hover:text-[color:var(--smoke)] hover:bg-[color:var(--nav-color)] transition duration-300">
-                <span id="default-message" class="flex items-center gap-x-2">
-                    <Copy class="size-7"/>
-                    Copiar Email
-                </span>
-                <span id="sucess-message" class="hidden transition duration-300">
-                    <div class="flex items-center gap-x-2">
-                        <Check class="size-7" />
-                        Copiado!
-                    </div>
-                </span>
-            </button>
         </div>
     </div>
 </header>

@@ -1,4 +1,5 @@
 ---
+import 'aos/dist/aos.css';
 import AboutMe from '@/components/AboutMe.astro';
 import Layout from '../layouts/Layout.astro';
 import Hero from '@/components/Hero.astro';
@@ -9,14 +10,21 @@ import Footer from '@/components/Footer.astro';
 import UpButton from '@/components/UpButton.astro';
 ---
 
+<script>
+	import AOS from 'aos';
+	AOS.init({
+		disable: 'mobile'
+	});
+</script>
+
 <Layout title="Francis | Portfolio">
-	<main class="flex flex-col items-center justify-center">
+	<main class="w-4/5 mx-auto flex flex-col items-center justify-center">
 		<Navbar />
 		<Hero />
 		<Works />
 		<AboutMe />
-		<Contact/>
-		<Footer/>
-		<UpButton/>
+		<Contact />
+		<Footer />
+		<UpButton />
 	</main>
 </Layout>
