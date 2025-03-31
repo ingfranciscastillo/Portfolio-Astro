@@ -1,3 +1,7 @@
+-![Captura de Pantalla 1](https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/hero.png)  
+
+![Captura de Pantalla 2](https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/about.png)  
+
 # Portafolio en Astro 🚀
 
 Bienvenido a mi portafolio personal, desarrollado con Astro 🚀, una moderna herramienta de construcción de sitios estáticos. Este portafolio está diseñado para mostrar mis proyectos destacados, habilidades y experiencias en un formato visualmente atractivo y fácil de navegar.
@@ -63,16 +67,6 @@ En este portafolio, he utilizado los siguientes conjuntos de iconos:
 - [Ionic icons](https://ionic.io/ionicons): Ionicons es un conjunto de iconos de código abierto con 1.300 iconos creados para aplicaciones web, iOS, Android y de escritorio.
 
 Puedes encontrar más información sobre cómo instalar y utilizar estos iconos en sus respectivas documentaciones.
-
-## Imágenes 🖼️
-
-Aquí hay algunas capturas de pantalla de mi portafolio:
-
-![Captura de Pantalla 1](https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/hero.png)  
-_Inicio del portafolios_
-
-![Captura de Pantalla 2](https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/about.png)  
-_Sobre mi_
 
 ## Redes Sociales 😉
 
