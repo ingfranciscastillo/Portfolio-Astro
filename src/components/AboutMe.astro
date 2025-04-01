@@ -13,6 +13,11 @@ import LinkedIn from "@/icons/LinkedIn.astro";
 import Instagram from "@/icons/Instagram.astro";
 import React from "@/icons/React.astro";
 import Hashnode from "@/icons/Hashnode.astro";
+import Svelte from '@/icons/svelte.astro';
+import Hono from '@/icons/Hono.astro'
+import Drizzle from '@/icons/Drizzle.astro';
+import Turso from '@/icons/Turso.astro';
+import Threads from '@/icons/Threads.astro';
 ---
 
 <section class="w-full px-4 sm:px-8 lg:px-16" id="sobreMi">
@@ -34,37 +39,45 @@ import Hashnode from "@/icons/Hashnode.astro";
                 <h2 data-aos="fade-right" data-aos-delay="300" class="text-2xl font-semibold text-right mb-6">
                     Habilidades<span class="text-[color:var(--yellow)]">.</span>
                 </h2>
-                <div class="flex items-center justify-end gap-4 flex-wrap">
-                    <React class="size-10"/>
-                    <NextJs class="size-10"/>
+                <div data-aos="fade-right" data-aos-delay="300" class="flex items-center justify-end gap-4 flex-wrap">
+                    <React class="size-8"/>
+                    <NextJs class="size-8"/>
                     <AstroIcon/>
-                    <Tailwind class="size-10"/>
-                    <Firebase class="size-10"/>
-                    <Shopify class="size-10"/>
-                    <Wordpress class="size-10"/>
-                    <Git class="size-10"/>
-                    <Typescript class="size-10"/>
-                    <Strapi class="size-10"/>
+                    <Tailwind class="size-8"/>
+                    <Firebase class="size-8"/>
+                    <Shopify class="size-8"/>
+                    <Wordpress class="size-8"/>
+                    <Git class="size-8"/>
+                    <Typescript class="size-8"/>
+                    <Strapi class="size-8"/>
+                    <Svelte class="size-8"/>
+                    <Hono class="size-8"/>
+                    <Drizzle class="size-8"/>
+                    <Turso class="size-8"/>
                 </div>
             </div>
                 <div class="row-span-4">
                 <h2 data-aos="fade-left" data-aos-delay="300" class="text-2xl font-semibold text-right mb-6">
                     Experiencia<span class="text-[color:var(--yellow)]">.</span>
                 </h2>
-                    <Timeline />
+                    <Timeline  />
                 </div>
             <div>
-                <h2 class="text-2xl font-semibold text-right mb-6">
+                <h2 data-aos="fade-right" data-aos-delay="300" class="text-2xl font-semibold text-right mb-6">
                     Redes sociales<span class="text-[color:var(--yellow)]">.</span>
                 </h2>
-                <div class="flex flex-row flex-wrap items-center justify-end gap-4">
+                <div data-aos="fade-right" data-aos-delay="300" class="flex flex-row flex-wrap items-center justify-end gap-4">
+                    <a href="https://www.instagram.com/ingfranciscastillo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram account">
+                        <Instagram class="size-8"/>
+                        <span class="sr-only">Instagram account</span>
+                    </a>
+                    <a href="https://www.threads.net/@ingfranciscastillo" target="_blank" rel="noopener noreferrer" aria-label="Threads account">
+                        <Threads class="size-8"/>
+                        <span class="sr-only">Threads account</span>
+                    </a>
                     <a href="https://www.linkedin.com/in/ingfranciscastillo/" target="_blank" rel="noopener noreferrer" aria-label="linkedIn page">
                         <LinkedIn class="size-8"/>
                         <span class="sr-only">LinkedIn Page</span>
-                    </a>
-                    <a href="https://www.instagram.com/ingfranciscastillo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram account">
-                        <Instagram class="size-10"/>
-                        <span class="sr-only">Instagram account</span>
                     </a>
                     <a href="https://hashnode.com/@ingfranciscastillo" target="_blank" rel="noopener noreferrer" aria-label="Hashnode page">
                         <Hashnode class="size-8"/>
