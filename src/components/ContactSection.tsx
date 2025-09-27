@@ -21,7 +21,7 @@ const contactFormSchema = z.object({
     .string()
     .min(2, "El nombre es muy corto")
     .max(100, "El nombre es muy largo"),
-  email: z.string().email("Correo electrónico inválido"),
+  email: z.string("Correo electrónico inválido"),
   phone: z.string().optional(),
   subject: z
     .string()
