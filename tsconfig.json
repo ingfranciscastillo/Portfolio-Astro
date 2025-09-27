@@ -16,8 +16,10 @@
         "src/fonts/*"
       ],
       "@/lib": [
-        "src/lib/*"],
-    }
+        "src/lib/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
-
 }

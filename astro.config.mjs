@@ -1,9 +1,22 @@
-// @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
-import tailwind from "@astrojs/tailwind";
+import react from "@astrojs/react";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
+  experimental: {
+    fonts: [
+      {
+        provider: fontProviders.fontshare(),
+        name: "Satoshi",
+        cssVariable: "--font-satoshi",
+      },
+    ],
+  },
+
+  integrations: [react()],
 });
