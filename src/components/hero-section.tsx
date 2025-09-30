@@ -7,7 +7,14 @@ import { motion } from "motion/react";
 
 export default function HeroSection() {
   const [titleNumber, setTitleNumber] = useState(0);
-  const titles = useMemo(() => ["Frontend", "Diseñador UI/UX", "Backend"], []);
+  const titles = useMemo(
+    () => [
+      "Desarrollador Frontend",
+      "Diseñador UI/UX",
+      "Desarrollador Backend",
+    ],
+    []
+  );
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -38,7 +45,7 @@ export default function HeroSection() {
                       {titles.map((title, index) => (
                         <motion.span
                           key={index}
-                          className="absolute font-semibold"
+                          className="text-4xl md:text-6xl absolute font-semibold"
                           initial={{ opacity: 0, y: "-100" }}
                           transition={{ type: "spring", stiffness: 50 }}
                           animate={

@@ -215,21 +215,22 @@ const AboutMeSection = () => {
             data-aos-delay="300"
             className="text-balance break leading-8 text-xl mb-8"
           >
-            Hola, mi nombre es Francis. 🤗 Soy un desarrollador frontEnd
-            apasionado por crear experiencias web atractivas y funcionales. Mi
-            enfoque se centra en combinar diseño y tecnología para construir
-            interfaces intuitivas que cumplan con las necesidades de los
-            usuarios.
+            Hola, mi nombre es Francis. 🤗 Soy un desarrollador Fullstack
+            apasionado por crear experiencias web completas, desde la interfaz
+            hasta la lógica del servidor. Me enfoco en combinar diseño y
+            tecnología para construir aplicaciones intuitivas y funcionales que
+            respondan a las necesidades reales de los usuarios.
           </p>
           <p
             data-aos="fade-left"
             data-aos-delay="300"
             className="text-balance break leading-8 text-xl mb-8"
           >
-            Trabajo de manera colaborativa con diseñadores y otros
-            desarrolladores para transformar conceptos en productos finales.
-            Siempre busco mejorar mis habilidades y mantenerme actualizado con
-            las últimas tendencias y tecnologías del sector.
+            Trabajo de manera independiente, gestionando todos los aspectos del
+            desarrollo de un proyecto: desde la planificación y diseño hasta la
+            implementación y optimización. Me esfuerzo por mantener un código
+            limpio, eficiente y escalable, siempre aplicando las mejores
+            prácticas y las últimas tecnologías del sector.
           </p>
           <p
             data-aos="fade-left"
@@ -237,10 +238,10 @@ const AboutMeSection = () => {
             className="text-balance break leading-8 text-xl mb-8"
           >
             Mi objetivo es seguir desarrollando proyectos desafiantes que no
-            solo cumplan con estándares técnicos, sino que también proporcionen
-            una experiencia de usuario excepcional. Estoy comprometido con la
-            calidad del código y la optimización del rendimiento, ayudando a las
-            empresas a alcanzar sus metas digitales.
+            solo cumplan con los estándares técnicos, sino que también
+            proporcionen experiencias de usuario excepcionales. Me comprometo
+            con la calidad, el rendimiento y la entrega de soluciones digitales
+            que realmente generen impacto.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-20">
