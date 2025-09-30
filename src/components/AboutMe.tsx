@@ -1,79 +1,224 @@
-import { Astro } from "./icons/AstroIcon";
-import { DrizzleORM } from "./icons/DrizzleIcon";
-import { TypeScript } from "./icons/TypeScriptIcon";
-import { TailwindCSS } from "./icons/TailwindIcon";
-import { Expressjs } from "./icons/ExpressIcon";
-import { Nextjs } from "./icons/NextIcon";
-import { Hono } from "./icons/HonoIcon";
-import { NestJS } from "./icons/NestIcon";
-import { Nuxt } from "./icons/NuxtIcon";
-import { Shopify } from "./icons/ShopifyIcon";
-import { Strapi } from "./icons/StrapiIcon";
-import { WordPress } from "./icons/WordpressIcon";
-import { Turso } from "./icons/TursoIcon";
-import { MongoDB } from "./icons/MongoIcon";
-import { Canva } from "./icons/CanvaIcon";
-import { Fastify } from "./icons/FastifyIcon";
-import { Netlify } from "./icons/NetlifyIcon";
-import { ReactQuery } from "./icons/ReactQueryIcon";
-import { Vercel } from "./icons/VercelIcon";
-import { BetterAuth } from "./icons/BetterAuthIcon";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
-import { GitHub } from "./social/GithubIcon";
-import { LinkedIn } from "./social/LinkedInIcon";
-import { XformerlyTwitter } from "./social/xIcon";
-import { Instagram } from "./social/InstagramIcon";
+import React from "react";
 
-const skills = [
-  { name: "Astro", icon: Astro },
+// Skill Icons
+import { Astro } from "./ui/svgs/astro";
+import { AstroDark } from "./ui/svgs/astroDark";
+import { DrizzleOrmLight } from "./ui/svgs/drizzleOrmLight";
+import { DrizzleOrmDark } from "./ui/svgs/drizzleOrmDark";
+import { Typescript } from "./ui/svgs/typescript";
+import { Tailwindcss } from "./ui/svgs/tailwindcss";
+import { Expressjs } from "./ui/svgs/expressjs";
+import { ExpressjsDark } from "./ui/svgs/expressjsDark";
+import { NextjsLogoLight } from "./ui/svgs/nextjsLogoLight";
+import { NextjsLogoDark } from "./ui/svgs/nextjsLogoDark";
+import { Hono } from "./ui/svgs/hono";
+import { Nestjs } from "./ui/svgs/nestjs";
+import { Nuxt } from "./ui/svgs/nuxt";
+import { Shopify } from "./ui/svgs/shopify";
+import { Strapi } from "./ui/svgs/strapi";
+import { Mongodb } from "./ui/svgs/mongodb";
+import { TursoLight } from "./ui/svgs/tursoLight";
+import { TursoDark } from "./ui/svgs/tursoDark";
+import { Wordpress } from "./ui/svgs/wordpress";
+import { Vercel } from "./ui/svgs/vercel";
+import { VercelDark } from "./ui/svgs/vercelDark";
+import { ReactLight } from "./ui/svgs/reactLight";
+import { ReactDark } from "./ui/svgs/reactDark";
+import { Preact } from "./ui/svgs/preact";
+import { Reactrouter } from "./ui/svgs/reactrouter";
+import { ClerkLight } from "./ui/svgs/clerkLight";
+import { ClerkDark } from "./ui/svgs/clerkDark";
+import { BetterAuthLight } from "./ui/svgs/betterAuthLight";
+import { BetterAuthDark } from "./ui/svgs/betterAuthDark";
+import { Upstash } from "./ui/svgs/upstash";
+import { Motion } from "./ui/svgs/motion";
+import { MotionDark } from "./ui/svgs/motionDark";
+import { ShadcnUi } from "./ui/svgs/shadcnUi";
+import { ShadcnUiDark } from "./ui/svgs/shadcnUiDark";
+import { Canva } from "./ui/svgs/canva";
+import { Zod } from "./ui/svgs/zod";
+import { Neon } from "./ui/svgs/neon";
+import { Redux } from "./ui/svgs/redux";
+import { Postgresql } from "./ui/svgs/postgresql";
+import { Git } from "./ui/svgs/git";
+import { Docker } from "./ui/svgs/docker";
+import { Prisma } from "./ui/svgs/prisma";
+import { PrismaDark } from "./ui/svgs/prismaDark";
+import { Svelte } from "./ui/svgs/svelte";
+import { Netlify } from "./ui/svgs/netlify";
+import { Redis } from "./ui/svgs/redis";
+import { Figma } from "./ui/svgs/figma";
+import { N8n } from "./ui/svgs/n8n";
+import { Firebase } from "./ui/svgs/firebase";
+import { MochaLight } from "./ui/svgs/mochaLight";
+import { MochaDark } from "./ui/svgs/mochaDark";
+import { Supabase } from "./ui/svgs/supabase";
+
+// Social Icons
+import { GithubLight } from "./ui/svgs/githubLight";
+import { GithubDark } from "./ui/svgs/githubDark";
+import { Instagram } from "./ui/svgs/instagram";
+import { InstagramDark } from "./ui/svgs/instagramDark";
+import { Linkedin } from "./ui/svgs/linkedin";
+import { X } from "./ui/svgs/x";
+import { XDark } from "./ui/svgs/xDark";
+import { Threads } from "./ui/svgs/threads";
+import { ThreadsDark } from "./ui/svgs/threadsDark";
+
+type SkillCategory =
+  | "frontend"
+  | "backend"
+  | "database"
+  | "cms"
+  | "hosting"
+  | "auth"
+  | "design"
+  | "tools";
+interface Skill {
+  name: string;
+  icon: React.ComponentType;
+  darkIcon?: React.ComponentType;
+  category: SkillCategory;
+}
+
+const skills: Skill[] = [
+  { name: "Astro", icon: Astro, darkIcon: AstroDark, category: "frontend" },
   {
     name: "Drizzle ORM",
-    icon: DrizzleORM,
+    icon: DrizzleOrmLight,
+    darkIcon: DrizzleOrmDark,
+    category: "database",
   },
-  { name: "TypeScript", icon: TypeScript },
-  { name: "TailwindCSS", icon: TailwindCSS },
-  { name: "Expressjs", icon: Expressjs },
-  { name: "Nextjs", icon: Nextjs },
-  { name: "Hono", icon: Hono },
-  { name: "NestJS", icon: NestJS },
-  { name: "Nuxt", icon: Nuxt },
-  { name: "Shopify", icon: Shopify },
-  { name: "Strapi", icon: Strapi },
-  { name: "WordPress", icon: WordPress },
-  { name: "Turso", icon: Turso },
-  { name: "MongoDB", icon: MongoDB },
-  { name: "Canva", icon: Canva },
-  { name: "Fastify", icon: Fastify },
-  { name: "Netlify", icon: Netlify },
-  { name: "React Query", icon: ReactQuery },
-  { name: "Vercel", icon: Vercel },
-  { name: "BetterAuth", icon: BetterAuth },
+  { name: "TypeScript", icon: Typescript, category: "frontend" },
+  { name: "TailwindCSS", icon: Tailwindcss, category: "frontend" },
+  {
+    name: "Express.js",
+    icon: Expressjs,
+    darkIcon: ExpressjsDark,
+    category: "backend",
+  },
+  {
+    name: "Next.js",
+    icon: NextjsLogoLight,
+    darkIcon: NextjsLogoDark,
+    category: "frontend",
+  },
+  { name: "Hono", icon: Hono, category: "backend" },
+  { name: "NestJS", icon: Nestjs, category: "backend" },
+  { name: "Nuxt", icon: Nuxt, category: "frontend" },
+  { name: "Shopify", icon: Shopify, category: "cms" },
+  { name: "Strapi", icon: Strapi, category: "cms" },
+  { name: "MongoDB", icon: Mongodb, category: "database" },
+  {
+    name: "Turso",
+    icon: TursoLight,
+    darkIcon: TursoDark,
+    category: "database",
+  },
+  { name: "WordPress", icon: Wordpress, category: "cms" },
+  {
+    name: "Vercel",
+    icon: Vercel,
+    darkIcon: VercelDark,
+    category: "hosting",
+  },
+  {
+    name: "React",
+    icon: ReactLight,
+    darkIcon: ReactDark,
+    category: "frontend",
+  },
+  { name: "Preact", icon: Preact, category: "frontend" },
+  { name: "React Router", icon: Reactrouter, category: "frontend" },
+  {
+    name: "Clerk",
+    icon: ClerkLight,
+    darkIcon: ClerkDark,
+    category: "frontend",
+  },
+  {
+    name: "BetterAuth",
+    icon: BetterAuthLight,
+    darkIcon: BetterAuthDark,
+    category: "frontend",
+  },
+  { name: "Upstash", icon: Upstash, category: "backend" },
+  { name: "Motion", icon: Motion, darkIcon: MotionDark, category: "frontend" },
+  {
+    name: "shadcn/ui",
+    icon: ShadcnUi,
+    darkIcon: ShadcnUiDark,
+    category: "frontend",
+  },
+  { name: "Canva", icon: Canva, category: "design" },
+  { name: "Zod", icon: Zod, category: "tools" },
+  { name: "Neon", icon: Neon, category: "database" },
+  { name: "Redux", icon: Redux, category: "tools" },
+  { name: "PostgreSQL", icon: Postgresql, category: "database" },
+  { name: "Git", icon: Git, category: "tools" },
+  { name: "Docker", icon: Docker, category: "tools" },
+  { name: "Prisma", icon: Prisma, darkIcon: PrismaDark, category: "database" },
+  { name: "Svelte", icon: Svelte, category: "frontend" },
+  { name: "Netlify", icon: Netlify, category: "hosting" },
+  { name: "Redis", icon: Redis, category: "database" },
+  { name: "Figma", icon: Figma, category: "design" },
+  { name: "n8n", icon: N8n, category: "tools" },
+  { name: "Firebase", icon: Firebase, category: "backend" },
+  { name: "Mocha", icon: MochaLight, darkIcon: MochaDark, category: "tools" },
+  { name: "Supabase", icon: Supabase, category: "database" },
 ];
 
 const social = [
   {
     name: "GitHub",
-    icon: GitHub,
+    icon: GithubLight,
+    darkIcon: GithubDark,
     link: "https://github.com/ingfranciscastillo/",
-  },
-  {
-    name: "LinkedIn",
-    icon: LinkedIn,
-    link: "https://www.linkedin.com/in/ingfranciscastillo/",
-  },
-  {
-    name: "Twitter",
-    icon: XformerlyTwitter,
-    link: "https://x.com/ingfranciscas",
   },
   {
     name: "Instagram",
     icon: Instagram,
+    darkIcon: InstagramDark,
     link: "https://www.instagram.com/ingfranciscastillo/",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    link: "https://www.linkedin.com/in/franciscocastillo/",
+  },
+  {
+    name: "X (Twitter)",
+    icon: X,
+    darkIcon: XDark,
+    link: "https://x.com/ingfranciscas",
+  },
+  {
+    name: "Threads",
+    icon: Threads,
+    darkIcon: ThreadsDark,
+    link: "https://www.threads.com/@ingfranciscastillo",
   },
 ];
 
 const AboutMeSection = () => {
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsDarkMode(document.documentElement.classList.contains("dark"));
+
+    const observer = new MutationObserver(() => {
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="sobre-mi" className="py-16 md:py-32">
       <div className="mx-auto max-w-4xl px-4 lg:px-0">
@@ -128,19 +273,156 @@ const AboutMeSection = () => {
                 data-aos-delay="300"
                 className="flex items-center gap-4 flex-wrap"
               >
-                {skills.map((skill) => (
-                  <Tooltip key={skill.name}>
-                    <TooltipTrigger asChild>
-                      <span>
-                        {skill.icon({ className: "w-8 h-8" })}
-                        <span className="sr-only">{skill.name}</span>
-                      </span>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>{skill.name}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                ))}
+                <h3
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                  className="text-xl font-semibold my-3 block w-full"
+                >
+                  Frontend
+                </h3>
+                {skills.map(
+                  (skill) =>
+                    skill.category === "frontend" && (
+                      <Tooltip key={skill.name}>
+                        <TooltipTrigger asChild>
+                          <span>
+                            {isDarkMode && skill.darkIcon
+                              ? skill.darkIcon({ className: "w-8 h-8" })
+                              : skill.icon({ className: "w-8 h-8" })}
+                            <span className="sr-only">{skill.name}</span>
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{skill.name}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    )
+                )}
+                <h3
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                  className="text-xl font-semibold my-3 block w-full"
+                >
+                  Backend
+                </h3>
+                {skills.map(
+                  (skill) =>
+                    skill.category === "backend" && (
+                      <Tooltip key={skill.name}>
+                        <TooltipTrigger asChild>
+                          <span>
+                            {isDarkMode && skill.darkIcon
+                              ? skill.darkIcon({ className: "w-8 h-8" })
+                              : skill.icon({ className: "w-8 h-8" })}
+                            <span className="sr-only">{skill.name}</span>
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{skill.name}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    )
+                )}
+                <h3
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                  className="text-xl font-semibold my-3 block w-full"
+                >
+                  Base de datos
+                </h3>
+                {skills.map(
+                  (skill) =>
+                    skill.category === "database" && (
+                      <Tooltip key={skill.name}>
+                        <TooltipTrigger asChild>
+                          <span>
+                            {isDarkMode && skill.darkIcon
+                              ? skill.darkIcon({ className: "w-8 h-8" })
+                              : skill.icon({ className: "w-8 h-8" })}
+                            <span className="sr-only">{skill.name}</span>
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{skill.name}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    )
+                )}
+                <h3
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                  className="text-xl font-semibold my-3 block w-full"
+                >
+                  Cms
+                </h3>
+                {skills.map(
+                  (skill) =>
+                    skill.category === "cms" && (
+                      <Tooltip key={skill.name}>
+                        <TooltipTrigger asChild>
+                          <span>
+                            {isDarkMode && skill.darkIcon
+                              ? skill.darkIcon({ className: "w-8 h-8" })
+                              : skill.icon({ className: "w-8 h-8" })}
+                            <span className="sr-only">{skill.name}</span>
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{skill.name}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    )
+                )}
+                <h3
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                  className="text-xl font-semibold my-3 block w-full"
+                >
+                  Herramientas
+                </h3>
+                {skills.map(
+                  (skill) =>
+                    skill.category === "tools" && (
+                      <Tooltip key={skill.name}>
+                        <TooltipTrigger asChild>
+                          <span>
+                            {isDarkMode && skill.darkIcon
+                              ? skill.darkIcon({ className: "w-8 h-8" })
+                              : skill.icon({ className: "w-8 h-8" })}
+                            <span className="sr-only">{skill.name}</span>
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{skill.name}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    )
+                )}
+                <h3
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                  className="text-xl font-semibold my-3 block w-full"
+                >
+                  Hosting
+                </h3>
+                {skills.map(
+                  (skill) =>
+                    skill.category === "hosting" && (
+                      <Tooltip key={skill.name}>
+                        <TooltipTrigger asChild>
+                          <span>
+                            {isDarkMode && skill.darkIcon
+                              ? skill.darkIcon({ className: "w-8 h-8" })
+                              : skill.icon({ className: "w-8 h-8" })}
+                            <span className="sr-only">{skill.name}</span>
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{skill.name}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    )
+                )}
               </div>
             </div>
             <div>
@@ -160,7 +442,9 @@ const AboutMeSection = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {social.icon({ className: "w-8 h-8" })}
+                        {isDarkMode && social.darkIcon
+                          ? social.darkIcon({ className: "w-8 h-8" })
+                          : social.icon({ className: "w-8 h-8" })}
                         <span className="sr-only">{social.name}</span>
                       </a>
                     </TooltipTrigger>
