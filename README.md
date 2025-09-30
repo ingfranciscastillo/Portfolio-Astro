@@ -1,6 +1,6 @@
--![Captura de Pantalla 1](https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/hero.png)  
+-![Modo Oscuro](/cap.png)
 
-![Captura de Pantalla 2](https://github.com/ingfranciscastillo/Portfolio-Astro/blob/master/Capturas/about.png)  
+![Modo Claro](/cap2.png)
 
 # Portafolio en Astro 🚀
 
@@ -41,10 +41,12 @@ Mi objetivo es no solo mostrar mis capacidades técnicas, sino también brindar 
 ## Tecnologías Utilizadas 🖥️
 
 - [Astro](https://astro.build/)
-- [HTML5](https://developer.mozilla.org/es/docs/Web/HTML)
-- [CSS3](https://developer.mozilla.org/es/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
-- [TailwindCSS](https://tailwindcss.com/)
+- [React](https://reactjs.org/)
+- [ShadCN](https://ui.shadcn.com/)
+- [TweakCN](https://tweakcn.com/)
+- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
+- [Motion](https://motion.dev/)
+- [Zod](https://zod.dev/)
 
 ## Herramientas Utilizadas 🔧
 
@@ -63,8 +65,6 @@ Estas herramientas han sido fundamentales en el desarrollo y diseño de mi porta
 En este portafolio, he utilizado los siguientes conjuntos de iconos:
 
 - [svgl](https://svgl.app/): Una hermosa biblioteca con logotipos SVG. Construido con Sveltekit & Tailwind CSS.
-- [Css\*gg](https://css.gg/): Una completa biblioteca de iconos CSS de código abierto. Con iconos Vanilla CSS, SVG y Figma UI.
-- [Ionic icons](https://ionic.io/ionicons): Ionicons es un conjunto de iconos de código abierto con 1.300 iconos creados para aplicaciones web, iOS, Android y de escritorio.
 
 Puedes encontrar más información sobre cómo instalar y utilizar estos iconos en sus respectivas documentaciones.
 
