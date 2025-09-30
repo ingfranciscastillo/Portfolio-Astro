@@ -66,23 +66,7 @@ import { XDark } from "./ui/svgs/xDark";
 import { Threads } from "./ui/svgs/threads";
 import { ThreadsDark } from "./ui/svgs/threadsDark";
 
-type SkillCategory =
-  | "frontend"
-  | "backend"
-  | "database"
-  | "cms"
-  | "hosting"
-  | "auth"
-  | "design"
-  | "tools";
-interface Skill {
-  name: string;
-  icon: React.ComponentType;
-  darkIcon?: React.ComponentType;
-  category: SkillCategory;
-}
-
-const skills: Skill[] = [
+const skills = [
   { name: "Astro", icon: Astro, darkIcon: AstroDark, category: "frontend" },
   {
     name: "Drizzle ORM",
@@ -239,7 +223,7 @@ const AboutMeSection = () => {
           </p>
           <p
             data-aos="fade-left"
-            data-aos-delay="400"
+            data-aos-delay="300"
             className="text-balance break leading-8 text-xl mb-8"
           >
             Trabajo de manera colaborativa con diseñadores y otros
@@ -249,7 +233,7 @@ const AboutMeSection = () => {
           </p>
           <p
             data-aos="fade-left"
-            data-aos-delay="500"
+            data-aos-delay="300"
             className="text-balance break leading-8 text-xl mb-8"
           >
             Mi objetivo es seguir desarrollando proyectos desafiantes que no
@@ -275,7 +259,7 @@ const AboutMeSection = () => {
               >
                 <h3
                   data-aos="fade-right"
-                  data-aos-delay="300"
+                  data-aos-delay="350"
                   className="text-xl font-semibold my-3 block w-full"
                 >
                   Frontend
@@ -283,7 +267,11 @@ const AboutMeSection = () => {
                 {skills.map(
                   (skill) =>
                     skill.category === "frontend" && (
-                      <Tooltip key={skill.name}>
+                      <Tooltip
+                        key={skill.name}
+                        data-aos="fade-right"
+                        data-aos-delay="400"
+                      >
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -300,7 +288,7 @@ const AboutMeSection = () => {
                 )}
                 <h3
                   data-aos="fade-right"
-                  data-aos-delay="300"
+                  data-aos-delay="350"
                   className="text-xl font-semibold my-3 block w-full"
                 >
                   Backend
@@ -308,7 +296,11 @@ const AboutMeSection = () => {
                 {skills.map(
                   (skill) =>
                     skill.category === "backend" && (
-                      <Tooltip key={skill.name}>
+                      <Tooltip
+                        key={skill.name}
+                        data-aos="fade-right"
+                        data-aos-delay="400"
+                      >
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -325,7 +317,7 @@ const AboutMeSection = () => {
                 )}
                 <h3
                   data-aos="fade-right"
-                  data-aos-delay="300"
+                  data-aos-delay="350"
                   className="text-xl font-semibold my-3 block w-full"
                 >
                   Base de datos
@@ -333,7 +325,11 @@ const AboutMeSection = () => {
                 {skills.map(
                   (skill) =>
                     skill.category === "database" && (
-                      <Tooltip key={skill.name}>
+                      <Tooltip
+                        key={skill.name}
+                        data-aos="fade-right"
+                        data-aos-delay="400"
+                      >
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -350,7 +346,7 @@ const AboutMeSection = () => {
                 )}
                 <h3
                   data-aos="fade-right"
-                  data-aos-delay="300"
+                  data-aos-delay="350"
                   className="text-xl font-semibold my-3 block w-full"
                 >
                   Cms
@@ -358,7 +354,11 @@ const AboutMeSection = () => {
                 {skills.map(
                   (skill) =>
                     skill.category === "cms" && (
-                      <Tooltip key={skill.name}>
+                      <Tooltip
+                        key={skill.name}
+                        data-aos="fade-right"
+                        data-aos-delay="400"
+                      >
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -375,7 +375,7 @@ const AboutMeSection = () => {
                 )}
                 <h3
                   data-aos="fade-right"
-                  data-aos-delay="300"
+                  data-aos-delay="350"
                   className="text-xl font-semibold my-3 block w-full"
                 >
                   Herramientas
@@ -383,7 +383,11 @@ const AboutMeSection = () => {
                 {skills.map(
                   (skill) =>
                     skill.category === "tools" && (
-                      <Tooltip key={skill.name}>
+                      <Tooltip
+                        key={skill.name}
+                        data-aos="fade-right"
+                        data-aos-delay="400"
+                      >
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -400,7 +404,7 @@ const AboutMeSection = () => {
                 )}
                 <h3
                   data-aos="fade-right"
-                  data-aos-delay="300"
+                  data-aos-delay="350"
                   className="text-xl font-semibold my-3 block w-full"
                 >
                   Hosting
@@ -408,7 +412,11 @@ const AboutMeSection = () => {
                 {skills.map(
                   (skill) =>
                     skill.category === "hosting" && (
-                      <Tooltip key={skill.name}>
+                      <Tooltip
+                        key={skill.name}
+                        data-aos="fade-right"
+                        data-aos-delay="400"
+                      >
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon

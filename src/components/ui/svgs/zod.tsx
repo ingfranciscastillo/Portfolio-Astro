@@ -3,7 +3,7 @@ import type { SVGProps } from "react";
 const Zod = (props: SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 256 203"
   >
     <path
@@ -19,8 +19,8 @@ const Zod = (props: SVGProps<SVGSVGElement>) => (
       d="m225.56 43.834-147.382 85.09-19.226-24.051 114.099-65.877-2.096-3.631 30.391-17.546zM146.596 14.075 35.93 77.968 18.719 56.483l74.095-42.78z"
     />
     <g transform="translate(2 1.51)">
-      <use xlink:href="#a" filter="url(#c)" />
-      <use xlink:href="#a" fill="#3068B7" />
+      <use xlinkHref="#a" filter="url(#c)" />
+      <use xlinkHref="#a" fill="#3068B7" />
     </g>
   </svg>
 );

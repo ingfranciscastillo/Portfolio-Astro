@@ -12,6 +12,22 @@ const menuItems = [
 
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsDarkMode(document.documentElement.classList.contains("dark"));
+
+    const observer = new MutationObserver(() => {
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <header>
       <nav
@@ -26,7 +42,11 @@ export const HeroHeader = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <img src="/favicon-black.png" className="size-8" alt="Logo" />
+                {isDarkMode ? (
+                  <img src="/favicon-white.png" className="size-8" alt="Logo" />
+                ) : (
+                  <img src="/favicon-black.png" className="size-8" alt="Logo" />
+                )}
               </a>
 
               <button
