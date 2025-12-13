@@ -210,33 +210,21 @@ const AboutMeSection = () => {
           Sobre mí
         </h2>
         <div>
-          <p
-            data-aos="fade-left"
-            data-aos-delay="300"
-            className="text-balance break leading-8 text-xl mb-8"
-          >
+          <p className="text-balance break leading-8 text-xl mb-8">
             Hola, mi nombre es Francis. 🤗 Soy un desarrollador Fullstack
             apasionado por crear experiencias web completas, desde la interfaz
             hasta la lógica del servidor. Me enfoco en combinar diseño y
             tecnología para construir aplicaciones intuitivas y funcionales que
             respondan a las necesidades reales de los usuarios.
           </p>
-          <p
-            data-aos="fade-left"
-            data-aos-delay="300"
-            className="text-balance break leading-8 text-xl mb-8"
-          >
+          <p className="text-balance break leading-8 text-xl mb-8">
             Trabajo de manera independiente, gestionando todos los aspectos del
             desarrollo de un proyecto: desde la planificación y diseño hasta la
             implementación y optimización. Me esfuerzo por mantener un código
             limpio, eficiente y escalable, siempre aplicando las mejores
             prácticas y las últimas tecnologías del sector.
           </p>
-          <p
-            data-aos="fade-left"
-            data-aos-delay="300"
-            className="text-balance break leading-8 text-xl mb-8"
-          >
+          <p className="text-balance break leading-8 text-xl mb-8">
             Mi objetivo es seguir desarrollando proyectos desafiantes que no
             solo cumplan con los estándares técnicos, sino que también
             proporcionen experiencias de usuario excepcionales. Me comprometo
@@ -246,33 +234,15 @@ const AboutMeSection = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-20">
             <div className="mb-6">
-              <h2
-                data-aos="fade-right"
-                data-aos-delay="300"
-                className="text-2xl font-semibold mb-6"
-              >
-                Habilidades.
-              </h2>
-              <div
-                data-aos="fade-right"
-                data-aos-delay="300"
-                className="flex items-center gap-4 flex-wrap"
-              >
-                <h3
-                  data-aos="fade-right"
-                  data-aos-delay="350"
-                  className="text-xl font-semibold my-3 block w-full"
-                >
+              <h2 className="text-2xl font-semibold mb-6">Habilidades.</h2>
+              <div className="flex items-center gap-4 flex-wrap">
+                <h3 className="text-xl font-semibold my-3 block w-full">
                   Frontend
                 </h3>
                 {skills.map(
                   (skill) =>
                     skill.category === "frontend" && (
-                      <Tooltip
-                        key={skill.name}
-                        data-aos="fade-right"
-                        data-aos-delay="400"
-                      >
+                      <Tooltip key={skill.name}>
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -287,21 +257,13 @@ const AboutMeSection = () => {
                       </Tooltip>
                     )
                 )}
-                <h3
-                  data-aos="fade-right"
-                  data-aos-delay="350"
-                  className="text-xl font-semibold my-3 block w-full"
-                >
+                <h3 className="text-xl font-semibold my-3 block w-full">
                   Backend
                 </h3>
                 {skills.map(
                   (skill) =>
                     skill.category === "backend" && (
-                      <Tooltip
-                        key={skill.name}
-                        data-aos="fade-right"
-                        data-aos-delay="400"
-                      >
+                      <Tooltip key={skill.name}>
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -316,21 +278,13 @@ const AboutMeSection = () => {
                       </Tooltip>
                     )
                 )}
-                <h3
-                  data-aos="fade-right"
-                  data-aos-delay="350"
-                  className="text-xl font-semibold my-3 block w-full"
-                >
+                <h3 className="text-xl font-semibold my-3 block w-full">
                   Base de datos
                 </h3>
                 {skills.map(
                   (skill) =>
                     skill.category === "database" && (
-                      <Tooltip
-                        key={skill.name}
-                        data-aos="fade-right"
-                        data-aos-delay="400"
-                      >
+                      <Tooltip key={skill.name}>
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -345,21 +299,11 @@ const AboutMeSection = () => {
                       </Tooltip>
                     )
                 )}
-                <h3
-                  data-aos="fade-right"
-                  data-aos-delay="350"
-                  className="text-xl font-semibold my-3 block w-full"
-                >
-                  Cms
-                </h3>
+                <h3 className="text-xl font-semibold my-3 block w-full">Cms</h3>
                 {skills.map(
                   (skill) =>
                     skill.category === "cms" && (
-                      <Tooltip
-                        key={skill.name}
-                        data-aos="fade-right"
-                        data-aos-delay="400"
-                      >
+                      <Tooltip key={skill.name}>
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -374,21 +318,13 @@ const AboutMeSection = () => {
                       </Tooltip>
                     )
                 )}
-                <h3
-                  data-aos="fade-right"
-                  data-aos-delay="350"
-                  className="text-xl font-semibold my-3 block w-full"
-                >
+                <h3 className="text-xl font-semibold my-3 block w-full">
                   Herramientas
                 </h3>
                 {skills.map(
                   (skill) =>
                     skill.category === "tools" && (
-                      <Tooltip
-                        key={skill.name}
-                        data-aos="fade-right"
-                        data-aos-delay="400"
-                      >
+                      <Tooltip key={skill.name}>
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -403,21 +339,13 @@ const AboutMeSection = () => {
                       </Tooltip>
                     )
                 )}
-                <h3
-                  data-aos="fade-right"
-                  data-aos-delay="350"
-                  className="text-xl font-semibold my-3 block w-full"
-                >
+                <h3 className="text-xl font-semibold my-3 block w-full">
                   Hosting
                 </h3>
                 {skills.map(
                   (skill) =>
                     skill.category === "hosting" && (
-                      <Tooltip
-                        key={skill.name}
-                        data-aos="fade-right"
-                        data-aos-delay="400"
-                      >
+                      <Tooltip key={skill.name}>
                         <TooltipTrigger asChild>
                           <span>
                             {isDarkMode && skill.darkIcon
@@ -435,13 +363,7 @@ const AboutMeSection = () => {
               </div>
             </div>
             <div>
-              <h2
-                data-aos="fade-right"
-                data-aos-delay="300"
-                className="text-2xl font-semibold mb-6"
-              >
-                Redes sociales.
-              </h2>
+              <h2 className="text-2xl font-semibold mb-6">Redes sociales.</h2>
               <div className="flex items-center gap-4 flex-wrap">
                 {social.map((social) => (
                   <Tooltip key={social.name}>
