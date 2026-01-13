@@ -210,26 +210,18 @@ const AboutMeSection = () => {
           Sobre mí
         </h2>
         <div>
-          <p className="text-balance break leading-8 text-xl mb-8">
-            Hola, mi nombre es Francis. 🤗 Soy un desarrollador Fullstack
-            apasionado por crear experiencias web completas, desde la interfaz
-            hasta la lógica del servidor. Me enfoco en combinar diseño y
-            tecnología para construir aplicaciones intuitivas y funcionales que
-            respondan a las necesidades reales de los usuarios.
+          <p className="text-pretty break leading-8 text-xl mb-8">
+            ¡Hola! Soy Francis. 👋 Desarrollador Fullstack con la mirada puesta en el detalle y el rendimiento. Me muevo con agilidad entre el ecosistema de React y la modernidad de Nuxt, lo que me permite elegir la mejor herramienta para cada desafío técnico. Mi trabajo combina la precisión técnica del backend con una sensibilidad estética refinada, algo que demuestro en proyectos como Nephrite y ResumeSense AI.
           </p>
-          <p className="text-balance break leading-8 text-xl mb-8">
-            Trabajo de manera independiente, gestionando todos los aspectos del
-            desarrollo de un proyecto: desde la planificación y diseño hasta la
-            implementación y optimización. Me esfuerzo por mantener un código
-            limpio, eficiente y escalable, siempre aplicando las mejores
-            prácticas y las últimas tecnologías del sector.
+          <p className="text-pretty break leading-8 text-xl mb-8">
+            Trabajo de forma independiente, transformando requisitos técnicos en experiencias digitales escalables y de alto rendimiento. Si buscas una mezcla de arquitectura sólida y diseño impecable, estás en el lugar correcto.
           </p>
-          <p className="text-balance break leading-8 text-xl mb-8">
-            Mi objetivo es seguir desarrollando proyectos desafiantes que no
-            solo cumplan con los estándares técnicos, sino que también
-            proporcionen experiencias de usuario excepcionales. Me comprometo
-            con la calidad, el rendimiento y la entrega de soluciones digitales
-            que realmente generen impacto.
+          <p className="text-pretty break leading-8 text-xl mb-8">
+            Mi stack técnico se basa en la velocidad y la seguridad. En el backend, construyo APIs ligeras y ultrarrápidas con <span className="text-foreground font-semibold">Hono</span> y <span className="text-foreground font-semibold">NestJS</span>, optimizando el acceso a datos mediante <span className="text-foreground font-semibold">Drizzle ORM</span> y <span className="text-foreground font-semibold">Prisma</span>. Soy un firme defensor de la integridad del código, por lo que utilizo <span className="text-foreground font-semibold">TypeScript</span> y <span className="text-foreground font-semibold">Zod</span> para garantizar aplicaciones robustas desde la base.
+          </p>
+
+          <p className="text-pretty break leading-8 text-xl mb-8">
+            Más allá del código, domino el ecosistema de datos moderno con <span className="text-foreground font-semibold">PostgreSQL</span>, <span className="text-foreground font-semibold">Turso</span> y <span className="text-foreground font-semibold">Supabase</span>, aprovechando herramientas como <span className="text-foreground font-semibold">Redis</span> para el almacenamiento en caché de alto rendimiento. Todo esto lo orquesto en entornos locales con <span className="text-foreground font-semibold">Docker</span> y lo despliego con confianza en <span className="text-foreground font-semibold">Vercel</span> o <span className="text-foreground font-semibold">Netlify</span>, asegurando que cada proyecto sea escalable, accesible y esté optimizado para el mundo real.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-20">
