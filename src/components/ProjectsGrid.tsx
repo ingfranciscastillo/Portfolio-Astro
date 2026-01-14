@@ -43,16 +43,19 @@ const projects = [
   description: "Suite modular de productividad que integra micro-servicios mediante el consumo de APIs externas. Incluye herramientas de finanzas, salud y edición de medios, gestionadas con una arquitectura de estado centralizada.",
   image: utiliappImg,
   tags: ["Nuxt 4", "NuxtUI", "Vue Query", "External APIs"],
-  liveUrl: "#", 
-  githubUrl: "#",
+  liveUrl: "https://utiliapp.netlify.app/", 
+  githubUrl: "https://github.com/ingfranciscastillo/nuxt-microapps",
 }
 ];
 
 const ProjectsGrid = () => {
   return (
-    <section className="px-6 py-16">
+    <section id="proyectos" className="px-6 py-16">
       <div className="mx-auto max-w-4xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h1 className="text-center text-4xl font-semibold lg:text-5xl">
+          Proyectos
+        </h1>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={project.title} {...project} index={index} />
           ))}
