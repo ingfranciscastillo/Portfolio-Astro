@@ -1,6 +1,4 @@
--![Modo Oscuro](/cap.png)
-
-![Modo Claro](/cap2.png)
+-![Captura](/cap.png)
 
 # Portafolio en Astro 🚀
 
