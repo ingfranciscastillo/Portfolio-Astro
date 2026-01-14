@@ -211,17 +211,69 @@ const AboutMeSection = () => {
         </h2>
         <div>
           <p className="text-pretty break leading-8 text-xl mb-8">
-            ¡Hola! Soy Francis. 👋 Desarrollador Fullstack con la mirada puesta en el detalle y el rendimiento. Me muevo con agilidad entre el ecosistema de React y la modernidad de Nuxt, lo que me permite elegir la mejor herramienta para cada desafío técnico. Mi trabajo combina la precisión técnica del backend con una sensibilidad estética refinada, algo que demuestro en proyectos como Nephrite y ResumeSense AI.
+            ¡Hola! Soy Francis. 👋 Desarrollador Fullstack con la mirada puesta
+            en el detalle y el rendimiento. Me muevo con agilidad entre el
+            ecosistema de React y la modernidad de Nuxt, lo que me permite
+            elegir la mejor herramienta para cada desafío técnico. Mi trabajo
+            combina la precisión técnica del backend con una sensibilidad
+            estética refinada, algo que demuestro en proyectos como Nephrite y
+            ResumeSense AI.
           </p>
           <p className="text-pretty break leading-8 text-xl mb-8">
-            Trabajo de forma independiente, transformando requisitos técnicos en experiencias digitales escalables y de alto rendimiento. Si buscas una mezcla de arquitectura sólida y diseño impecable, estás en el lugar correcto.
+            Trabajo de forma independiente, transformando requisitos técnicos en
+            experiencias digitales escalables y de alto rendimiento. Si buscas
+            una mezcla de arquitectura sólida y diseño impecable, estás en el
+            lugar correcto.
           </p>
           <p className="text-pretty break leading-8 text-xl mb-8">
-            Mi stack técnico se basa en la velocidad y la seguridad. En el backend, construyo APIs ligeras y ultrarrápidas con <span className="text-foreground font-semibold">Hono</span> y <span className="text-foreground font-semibold">NestJS</span>, optimizando el acceso a datos mediante <span className="text-foreground font-semibold">Drizzle ORM</span> y <span className="text-foreground font-semibold">Prisma</span>. Soy un firme defensor de la integridad del código, por lo que utilizo <span className="text-foreground font-semibold">TypeScript</span> y <span className="text-foreground font-semibold">Zod</span> para garantizar aplicaciones robustas desde la base.
+            Mi stack técnico se basa en la velocidad y la seguridad. En el
+            backend, construyo APIs ligeras y ultrarrápidas con{" "}
+            <span className="text-foreground font-semibold">Hono</span> y{" "}
+            <span className="text-foreground font-semibold">NestJS</span>,
+            optimizando el acceso a datos mediante{" "}
+            <span className="text-foreground font-semibold">Drizzle ORM</span> y{" "}
+            <span className="text-foreground font-semibold">Prisma</span>. Soy
+            un firme defensor de la integridad del código, por lo que utilizo{" "}
+            <span className="text-foreground font-semibold">TypeScript</span> y{" "}
+            <span className="text-foreground font-semibold">Zod</span> para
+            garantizar aplicaciones robustas desde la base.
           </p>
 
           <p className="text-pretty break leading-8 text-xl mb-8">
-            Más allá del código, domino el ecosistema de datos moderno con <span className="text-foreground font-semibold">PostgreSQL</span>, <span className="text-foreground font-semibold">Turso</span> y <span className="text-foreground font-semibold">Supabase</span>, aprovechando herramientas como <span className="text-foreground font-semibold">Redis</span> para el almacenamiento en caché de alto rendimiento. Todo esto lo orquesto en entornos locales con <span className="text-foreground font-semibold">Docker</span> y lo despliego con confianza en <span className="text-foreground font-semibold">Vercel</span> o <span className="text-foreground font-semibold">Netlify</span>, asegurando que cada proyecto sea escalable, accesible y esté optimizado para el mundo real.
+            Más allá del código, domino el ecosistema de datos moderno con{" "}
+            <span className="text-foreground font-semibold">PostgreSQL</span>,{" "}
+            <span className="text-foreground font-semibold">Turso</span> y{" "}
+            <span className="text-foreground font-semibold">Supabase</span>,
+            aprovechando herramientas como{" "}
+            <span className="text-foreground font-semibold">Redis</span> para el
+            almacenamiento en caché de alto rendimiento. Todo esto lo orquesto
+            en entornos locales con{" "}
+            <span className="text-foreground font-semibold">Docker</span> y lo
+            despliego con confianza en{" "}
+            <span className="text-foreground font-semibold">Vercel</span> o{" "}
+            <span className="text-foreground font-semibold">Netlify</span>,
+            asegurando que cada proyecto sea escalable, accesible y esté
+            optimizado para el mundo real.
+          </p>
+          <p className="text-pretty break leading-8 text-xl mb-8">
+            Mi enfoque actual se centra en{" "}
+            <span className="text-foreground font-semibold">
+              democratizar la tecnología compleja
+            </span>
+            , desarrollando soluciones que van desde{" "}
+            <span className="text-foreground font-semibold">
+              tutores pedagógicos con IA
+            </span>{" "}
+            hasta
+            <span className="text-foreground font-semibold">
+              generadores automatizados de documentos legales
+            </span>
+            . Mi objetivo es convertir la potencia de los modelos de lenguaje en
+            herramientas prácticas,{" "}
+            <span className="text-foreground font-semibold">
+              accesibles y seguras
+            </span>
+            para el mundo real.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-20">

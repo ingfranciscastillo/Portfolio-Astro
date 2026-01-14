@@ -7,6 +7,8 @@ import utiliappImg from "@/assets/Projects/UtiliApp.png";
 import yermoImg from "@/assets/Projects/Postapocalipsis-rpg.png";
 import tutorIAImg from "@/assets/Projects/tutorAI.png";
 import pactumImg from "@/assets/Projects/pactumAI.png";
+import breveUrlImg from "@/assets/Projects/breveUrl.png";
+import storyWeaverImg from "@/assets/Projects/story-weaver.png";
 
 const projects = [
   {
@@ -80,6 +82,24 @@ const projects = [
     tags: ["Next.js", "Groq AI", "Tailwind CSS", "PDF-Lib", "Zod"],
     liveUrl: "https://pactum.netlify.app/",
     githubUrl: "https://github.com/ingfranciscastillo/ai-contract-generator",
+  },
+  {
+    title: "BreveUrl",
+    description:
+      "Servicio de optimización de enlaces diseñado para la velocidad. Implementa una arquitectura desacoplada con un backend de alto rendimiento en Fastify y una interfaz ligera construida con Astro y Preact.",
+    image: breveUrlImg,
+    tags: ["Astro", "Fastify", "Preact", "Shadcn UI", "REST API"],
+    liveUrl: "https://breveurl.netlify.app/",
+    githubUrl: "https://github.com/ingfranciscastillo/frontend-url-shortener",
+  },
+  {
+    title: "Story Weaver",
+    description:
+      "Plataforma de generación de historias interactivas mediante arquitecturas de tipo seguro. Implementa chat con Groq AI, autenticación avanzada con Better Auth y una capa de datos reactiva mediante tRPC y Drizzle ORM.",
+    image: storyWeaverImg,
+    tags: ["tRPC", "Groq AI", "Better Auth", "Cloudflare", "Next-intl"],
+    liveUrl: "#",
+    githubUrl: "#",
   },
 ];
 
