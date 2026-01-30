@@ -8,7 +8,7 @@ import yermoImg from "@/assets/Projects/Postapocalipsis-rpg.png";
 import tutorIAImg from "@/assets/Projects/tutorAI.png";
 import pactumImg from "@/assets/Projects/pactumAI.png";
 import breveUrlImg from "@/assets/Projects/breveUrl.png";
-import storyWeaverImg from "@/assets/Projects/story-weaver.png";
+import talegridImg from "@/assets/Projects/talegrid.png";
 
 const projects = [
   {
@@ -95,10 +95,10 @@ const projects = [
   {
     title: "Story Weaver",
     description:
-      "Plataforma de generación de historias interactivas mediante arquitecturas de tipo seguro. Implementa chat con Groq AI, autenticación avanzada con Better Auth y una capa de datos reactiva mediante tRPC y Drizzle ORM.",
-    image: storyWeaverImg,
-    tags: ["tRPC", "Groq AI", "Better Auth", "Cloudflare", "Next-intl"],
-    liveUrl: "#",
+      "Plataforma de creación de historias interactivas. Implementa chat con Groq AI, autenticación avanzada con Better Auth y una capa de datos reactiva mediante tRPC y Drizzle ORM.",
+    image: talegridImg,
+    tags: ["tRPC", "Nextjs", "Better Auth", "Cloudflare", "tRPC", "PostgreSQL"],
+    liveUrl: "https://www.talegrid.app/",
     githubUrl: "#",
   },
 ];

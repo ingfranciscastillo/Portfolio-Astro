@@ -1,7 +1,6 @@
 -![Captura](/cap.png)
 
 # Portafolio en Astro 🚀
-
 Bienvenido a mi portafolio personal, desarrollado con Astro 🚀, una moderna herramienta de construcción de sitios estáticos. Este portafolio está diseñado para mostrar mis proyectos destacados, habilidades y experiencias en un formato visualmente atractivo y fácil de navegar.
 
 ## Descripción
@@ -24,10 +23,6 @@ Mi objetivo es no solo mostrar mis capacidades técnicas, sino también brindar 
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Herramientas Utilizadas](#Herramientas-utilizadas)
 - [Iconos Utilizados](#Iconos-utilizados)
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
 
 ## Características
 
