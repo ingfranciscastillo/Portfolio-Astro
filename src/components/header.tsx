@@ -1,8 +1,7 @@
 "use client";
 import { Menu, X } from "lucide-react";
 import React from "react";
-import { ModeToggle } from "./ModeToggle";
-import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 
 const menuItems = [
   { name: "Inicio", href: "/" },

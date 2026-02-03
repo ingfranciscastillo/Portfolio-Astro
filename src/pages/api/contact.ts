@@ -1,5 +1,4 @@
 import type { APIRoute } from "astro";
-import {z} from "zod";
 import * as brevo from "@getbrevo/brevo";
 import { contactFormSchema } from "@/lib/validations/contact";
 import { sanitizeFormData } from "@/lib/utils/sanitize";
