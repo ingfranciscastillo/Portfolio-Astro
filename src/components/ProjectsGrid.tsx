@@ -12,7 +12,7 @@ import talegridImg from "@/assets/Projects/talegrid.png";
 
 const projects = [
   {
-    title: "ResumeSense AI",
+    title: "ResumeSense: AI para CVs",
     description:
       "Plataforma de optimización de CVs que utiliza IA para analizar la compatibilidad con vacantes específicas, ofreciendo feedback detallado y sugerencias de mejora.",
     image: imagenResume,
@@ -30,7 +30,7 @@ const projects = [
     githubUrl: "https://github.com/Nephrite-theme",
   },
   {
-    title: "Password Forge",
+    title: "Password Forge: Generador de contraseñas",
     description:
       "Generador de contraseñas de alta seguridad con gestión de bóveda encriptada. Implementa validaciones estrictas con Zod, manejo de estado asíncrono y una arquitectura escalable.",
     image: passwordImg,
@@ -39,7 +39,7 @@ const projects = [
     githubUrl: "https://github.com/ingfranciscastillo/password-generator",
   },
   {
-    title: "FocusFlow Task Manager",
+    title: "Todo App: Gestión de tareas",
     description:
       "Aplicación de gestión de tareas de alto rendimiento desarrollada con la nueva estructura de Nuxt 4. Implementa una arquitectura reactiva con Pinia y componentes accesibles mediante HeadlessUI.",
     image: todoAppImg,
@@ -57,7 +57,7 @@ const projects = [
     githubUrl: "https://github.com/ingfranciscastillo/nuxt-microapps",
   },
   {
-    title: "El Yermo Eterno",
+    title: "El Yermo Eterno: RPG Post-apocalíptico",
     description:
       "RPG táctico de supervivencia post-apocalíptica con motor de comandos por consola. Implementa sistemas complejos de combate por turnos, gestión de inventario persistente y una narrativa dinámica basada en clases.",
     image: yermoImg,
@@ -66,7 +66,7 @@ const projects = [
     githubUrl: "https://github.com/ingfranciscastillo/postapocalipsis-rpg",
   },
   {
-    title: "Lurny AI",
+    title: "Tutor IA",
     description:
       "Plataforma de aprendizaje personalizado que utiliza IA generativa para resolver dudas académicas según el nivel educativo. Implementa streaming de respuestas, persistencia de chats y exportación de materiales de estudio.",
     image: tutorIAImg,
@@ -75,7 +75,7 @@ const projects = [
     githubUrl: "https://github.com/ingfranciscastillo/tutor-virtual",
   },
   {
-    title: "Pactum: Smart Contract Builder",
+    title: "Pactum: Generador de contratos",
     description:
       "Generador inteligente de documentos legales que utiliza modelos de lenguaje para redactar contratos. Incluye validación de cláusulas, estructuras legales dinámicas y exportación profesional en tiempo real.",
     image: pactumImg,
@@ -84,7 +84,7 @@ const projects = [
     githubUrl: "https://github.com/ingfranciscastillo/ai-contract-generator",
   },
   {
-    title: "BreveUrl",
+    title: "BreveUrl: Acortador de URLs",
     description:
       "Servicio de optimización de enlaces diseñado para la velocidad. Implementa una arquitectura desacoplada con un backend de alto rendimiento en Fastify y una interfaz ligera construida con Astro y Preact.",
     image: breveUrlImg,
@@ -93,9 +93,9 @@ const projects = [
     githubUrl: "https://github.com/ingfranciscastillo/frontend-url-shortener",
   },
   {
-    title: "Story Weaver",
+    title: "TaleGrid: Creación de historias interactivas",
     description:
-      "Plataforma de creación de historias interactivas. Implementa chat con Groq AI, autenticación avanzada con Better Auth y una capa de datos reactiva mediante tRPC y Drizzle ORM.",
+      "Plataforma de creación de historias interactivas donde puedes crear tus propias historias que contengan decisiones y opciones para el usuario.",
     image: talegridImg,
     tags: ["tRPC", "Nextjs", "Better Auth", "Cloudflare", "tRPC", "PostgreSQL"],
     liveUrl: "https://www.talegrid.app/",

@@ -20,7 +20,6 @@ import { Strapi } from "./ui/svgs/strapi";
 import { Mongodb } from "./ui/svgs/mongodb";
 import { TursoLight } from "./ui/svgs/tursoLight";
 import { TursoDark } from "./ui/svgs/tursoDark";
-import { Wordpress } from "./ui/svgs/wordpress";
 import { Vercel } from "./ui/svgs/vercel";
 import { VercelDark } from "./ui/svgs/vercelDark";
 import { ReactLight } from "./ui/svgs/reactLight";
@@ -51,9 +50,10 @@ import { Redis } from "./ui/svgs/redis";
 import { Figma } from "./ui/svgs/figma";
 import { N8n } from "./ui/svgs/n8n";
 import { Firebase } from "./ui/svgs/firebase";
-import { MochaLight } from "./ui/svgs/mochaLight";
-import { MochaDark } from "./ui/svgs/mochaDark";
-import { Supabase } from "./ui/svgs/supabase";
+import { Vitest } from "./ui/svgs/vitest";
+import { Vite } from "./ui/svgs/vite";
+import { SanityLight } from "./ui/svgs/sanityLight";
+import { SanityDark } from "./ui/svgs/sanityDark";
 
 // Social Icons
 import { GithubLight } from "./ui/svgs/githubLight";
@@ -100,7 +100,6 @@ const skills = [
     darkIcon: TursoDark,
     category: "database",
   },
-  { name: "WordPress", icon: Wordpress, category: "cms" },
   {
     name: "Vercel",
     icon: Vercel,
@@ -149,8 +148,9 @@ const skills = [
   { name: "Figma", icon: Figma, category: "design" },
   { name: "n8n", icon: N8n, category: "tools" },
   { name: "Firebase", icon: Firebase, category: "backend" },
-  { name: "Mocha", icon: MochaLight, darkIcon: MochaDark, category: "tools" },
-  { name: "Supabase", icon: Supabase, category: "database" },
+  { name: "Sanity", icon: SanityLight, darkIcon: SanityDark, category: "cms" },
+  { name: "Vite", icon: Vite, category: "tools" },
+  { name: "Vitest", icon: Vitest, category: "tools" },
 ];
 
 const social = [
@@ -214,10 +214,7 @@ const AboutMeSection = () => {
             ¡Hola! Soy Francis. 👋 Desarrollador Fullstack con la mirada puesta
             en el detalle y el rendimiento. Me muevo con agilidad entre el
             ecosistema de React y la modernidad de Nuxt, lo que me permite
-            elegir la mejor herramienta para cada desafío técnico. Mi trabajo
-            combina la precisión técnica del backend con una sensibilidad
-            estética refinada, algo que demuestro en proyectos como Nephrite y
-            ResumeSense AI.
+            elegir la mejor herramienta para cada desafío técnico.
           </p>
           <p className="text-pretty break leading-8 text-xl mb-8">
             Trabajo de forma independiente, transformando requisitos técnicos en
