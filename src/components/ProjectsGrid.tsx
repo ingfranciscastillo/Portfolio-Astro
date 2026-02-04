@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Nephrite: The Emerald Standard",
     description:
-      "Elegancia y enfoque para tu entorno digital. Un ecosistema visual meticulosamente diseñado para transformar tu navegador y editor en un santuario de calma y productividad.",
+      "Un ecosistema visual meticulosamente diseñado para transformar tu navegador y editor en un santuario de calma y productividad.",
     image: nephriteImg,
     tags: ["UI Design", "Product Design", "Cross-platform", "Astro"],
     liveUrl: "https://getnephrite.dev",
@@ -32,7 +32,7 @@ const projects = [
   {
     title: "Password Forge: Generador de contraseñas",
     description:
-      "Generador de contraseñas de alta seguridad con gestión de bóveda encriptada. Implementa validaciones estrictas con Zod, manejo de estado asíncrono y una arquitectura escalable.",
+      "Generador de contraseñas de alta seguridad con gestión de bóveda encriptada.",
     image: passwordImg,
     tags: ["Next.js", "TypeScript", "Prisma", "TanStack Query", "Zod"],
     liveUrl: "https://passswordforge.netlify.app/",
@@ -41,7 +41,7 @@ const projects = [
   {
     title: "Todo App: Gestión de tareas",
     description:
-      "Aplicación de gestión de tareas de alto rendimiento desarrollada con la nueva estructura de Nuxt 4. Implementa una arquitectura reactiva con Pinia y componentes accesibles mediante HeadlessUI.",
+      "Aplicación de gestión de tareas de alto rendimiento desarrollada con la nueva estructura de Nuxt 4.",
     image: todoAppImg,
     tags: ["Nuxt 4", "Vue 3", "Pinia", "TypeScript", "Tailwind"],
     liveUrl: "https://nuxt-todo-list-app.vercel.app/",
@@ -58,8 +58,7 @@ const projects = [
   },
   {
     title: "El Yermo Eterno: RPG Post-apocalíptico",
-    description:
-      "RPG táctico de supervivencia post-apocalíptica con motor de comandos por consola. Implementa sistemas complejos de combate por turnos, gestión de inventario persistente y una narrativa dinámica basada en clases.",
+    description: "RPG táctico de supervivencia post-apocalíptica.",
     image: yermoImg,
     tags: ["Next.js", "Zustand", "TypeScript", "Tailwind CSS", "Game Dev"],
     liveUrl: "https://yermo-eterno.netlify.app/",
@@ -68,7 +67,7 @@ const projects = [
   {
     title: "Tutor IA",
     description:
-      "Plataforma de aprendizaje personalizado que utiliza IA generativa para resolver dudas académicas según el nivel educativo. Implementa streaming de respuestas, persistencia de chats y exportación de materiales de estudio.",
+      "Plataforma de aprendizaje que utiliza IA generativa para resolver dudas académicas según el nivel educativo.",
     image: tutorIAImg,
     tags: ["Next.js 16", "AI SDK", "Groq AI", "Drizzle ORM", "Clerk", "Neon"],
     liveUrl: "https://lurnyai.netlify.app/",
@@ -77,7 +76,7 @@ const projects = [
   {
     title: "Pactum: Generador de contratos",
     description:
-      "Generador inteligente de documentos legales que utiliza modelos de lenguaje para redactar contratos. Incluye validación de cláusulas, estructuras legales dinámicas y exportación profesional en tiempo real.",
+      "Generador inteligente de documentos legales que utiliza IA para redactar contratos.",
     image: pactumImg,
     tags: ["Next.js", "Groq AI", "Tailwind CSS", "PDF-Lib", "Zod"],
     liveUrl: "https://pactum.netlify.app/",
@@ -85,8 +84,7 @@ const projects = [
   },
   {
     title: "BreveUrl: Acortador de URLs",
-    description:
-      "Servicio de optimización de enlaces diseñado para la velocidad. Implementa una arquitectura desacoplada con un backend de alto rendimiento en Fastify y una interfaz ligera construida con Astro y Preact.",
+    description: "Servicio de optimización de enlaces.",
     image: breveUrlImg,
     tags: ["Astro", "Fastify", "Preact", "Shadcn UI", "REST API"],
     liveUrl: "https://breveurl.netlify.app/",
