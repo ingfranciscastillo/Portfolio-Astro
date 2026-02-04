@@ -1,13 +1,33 @@
-import DOMPurify from 'isomorphic-dompurify';
-
 export const sanitizeInput = (input: string): string => {
-  // Configuración estricta de DOMPurify
-  const clean = DOMPurify.sanitize(input, {
-    ALLOWED_TAGS: [], // No permitir ninguna etiqueta HTML
-    ALLOWED_ATTR: [],
-    KEEP_CONTENT: true, // Mantener el contenido de texto
-  });
+  if (!input) return '';
   
+  // Sanitización manual sin DOMPurify
+  let clean = input
+    // Remover tags HTML básicos
+    .replace(/<script[^>]*>.*?<\/script>/gi, '')
+    .replace(/<iframe[^>]*>.*?<\/iframe>/gi, '')
+    .replace(/<object[^>]*>.*?<\/object>/gi, '')
+    .replace(/<embed[^>]*>/gi, '')
+    .replace(/<link[^>]*>/gi, '')
+    .replace(/<style[^>]*>.*?<\/style>/gi, '')
+    
+    // Remover event handlers
+    .replace(/on\w+\s*=\s*["'][^"']*["']/gi, '')
+    .replace(/on\w+\s*=\s*[^\s>]*/gi, '')
+    
+    // Remover protocolos peligrosos
+    .replace(/javascript:/gi, 'removed:')
+    .replace(/data:text\/html/gi, 'removed:')
+    .replace(/vbscript:/gi, 'removed:')
+    
+    // Escapar caracteres HTML especiales
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;')
+    .replace(/\//g, '&#x2F;');
+
   return clean.trim();
 };
 
