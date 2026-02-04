@@ -1,14 +1,16 @@
 import ProjectCard from "./ProjectCard";
-import imagenResume from "@/assets/Projects/ResumeSense.png";
-import nephriteImg from "@/assets/Projects/Nephrite-website.png";
-import passwordImg from "@/assets/Projects/PasswordGenerator.png";
-import todoAppImg from "@/assets/Projects/TodoApp.png";
-import utiliappImg from "@/assets/Projects/UtiliApp.png";
-import yermoImg from "@/assets/Projects/Postapocalipsis-rpg.png";
-import tutorIAImg from "@/assets/Projects/tutorAI.png";
-import pactumImg from "@/assets/Projects/pactumAI.png";
-import breveUrlImg from "@/assets/Projects/breveUrl.png";
-import talegridImg from "@/assets/Projects/talegrid.png";
+import { Section } from "./Section";
+
+import imagenResume from "@/assets/Projects/ResumeSense.webp";
+import nephriteImg from "@/assets/Projects/Nephrite-website.webp";
+import passwordImg from "@/assets/Projects/PasswordGenerator.webp";
+import todoAppImg from "@/assets/Projects/TodoApp.webp";
+import utiliappImg from "@/assets/Projects/UtiliApp.webp";
+import yermoImg from "@/assets/Projects/Postapocalipsis-rpg.webp";
+import tutorIAImg from "@/assets/Projects/tutorAI.webp";
+import pactumImg from "@/assets/Projects/pactumAI.webp";
+import breveUrlImg from "@/assets/Projects/breveUrl.webp";
+import talegridImg from "@/assets/Projects/talegrid.webp";
 
 interface Project {
   title: string;
@@ -111,18 +113,13 @@ const projects: Project[] = [
 
 const ProjectsGrid = () => {
   return (
-    <section id="proyectos" className="px-6 py-16">
-      <div className="mx-auto max-w-4xl">
-        <h1 className="text-center text-4xl font-semibold lg:text-5xl">
-          Proyectos
-        </h1>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <ProjectCard key={project.title} {...project} index={index} />
-          ))}
-        </div>
+    <Section id="proyectos" title="Proyectos">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project, index) => (
+          <ProjectCard key={project.title} {...project} index={index} />
+        ))}
       </div>
-    </section>
+    </Section>
   );
 };
 

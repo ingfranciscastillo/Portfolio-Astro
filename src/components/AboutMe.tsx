@@ -68,6 +68,7 @@ import { XDark } from "./ui/svgs/xDark";
 import { Threads } from "./ui/svgs/threads";
 import { ThreadsDark } from "./ui/svgs/threadsDark";
 import ExperienceTimeline from "./Timeline";
+import { Section } from "./Section";
 
 const skills = [
   { name: "Astro", icon: Astro, darkIcon: AstroDark, category: "frontend" },
@@ -213,260 +214,249 @@ const AboutMeSection = () => {
   }, []);
 
   return (
-    <section id="sobre-mi" className="py-16 md:py-32">
-      <div className="mx-auto max-w-4xl px-4 lg:px-0">
-        <h2 className="mb-12 text-center text-4xl font-semibold lg:text-5xl">
-          Sobre mí
-        </h2>
+    <Section id="sobre-mi" title="Sobre mí">
+      <div className="mx-auto max-w-3xl">
+        <p className="text-pretty break leading-8 text-lg mb-8">
+          ¡Hola! Soy Francis. 👋 Desarrollador Fullstack con la mirada puesta en
+          el detalle y el rendimiento. Me muevo con agilidad entre el ecosistema
+          de React y la modernidad de Nuxt, lo que me permite elegir la mejor
+          herramienta para cada desafío técnico.
+        </p>
+        <p className="text-pretty break leading-8 text-lg mb-8">
+          Trabajo de forma independiente, transformando requisitos técnicos en
+          experiencias digitales escalables y de alto rendimiento. Si buscas una
+          mezcla de arquitectura sólida y diseño impecable, estás en el lugar
+          correcto.
+        </p>
+        <p className="text-pretty break leading-8 text-lg mb-8">
+          Mi stack técnico se basa en la velocidad y la seguridad. En el
+          backend, construyo APIs ligeras y ultrarrápidas con{" "}
+          <span className="text-foreground font-semibold">Hono</span> y{" "}
+          <span className="text-foreground font-semibold">NestJS</span>,
+          optimizando el acceso a datos mediante{" "}
+          <span className="text-foreground font-semibold">Drizzle ORM</span> y{" "}
+          <span className="text-foreground font-semibold">Prisma</span>. Soy un
+          firme defensor de la integridad del código, por lo que utilizo{" "}
+          <span className="text-foreground font-semibold">TypeScript</span> y{" "}
+          <span className="text-foreground font-semibold">Zod</span> para
+          garantizar aplicaciones robustas desde la base.
+        </p>
+        <p className="text-pretty break leading-8 text-lg mb-8">
+          Más allá del código, domino el ecosistema de datos moderno con{" "}
+          <span className="text-foreground font-semibold">PostgreSQL</span>,{" "}
+          <span className="text-foreground font-semibold">Turso</span> y{" "}
+          <span className="text-foreground font-semibold">Supabase</span>,
+          aprovechando herramientas como{" "}
+          <span className="text-foreground font-semibold">Redis</span> para el
+          almacenamiento en caché de alto rendimiento. Todo esto lo orquesto en
+          entornos locales con{" "}
+          <span className="text-foreground font-semibold">Docker</span> y lo
+          despliego con confianza en{" "}
+          <span className="text-foreground font-semibold">Vercel</span> o{" "}
+          <span className="text-foreground font-semibold">Netlify</span>,
+          asegurando que cada proyecto sea escalable, accesible y esté
+          optimizado para el mundo real.
+        </p>
+        <p className="text-pretty break leading-8 text-lg mb-8">
+          Mi enfoque actual se centra en{" "}
+          <span className="text-foreground font-semibold">
+            democratizar la tecnología compleja
+          </span>
+          , desarrollando soluciones que van desde{" "}
+          <span className="text-foreground font-semibold">
+            tutores pedagógicos con IA
+          </span>{" "}
+          hasta
+          <span className="text-foreground font-semibold">
+            generadores automatizados de documentos legales
+          </span>
+          . Mi objetivo es convertir la potencia de los modelos de lenguaje en
+          herramientas prácticas,{" "}
+          <span className="text-foreground font-semibold">
+            accesibles y seguras
+          </span>
+          para el mundo real.
+        </p>
+      </div>
+
+      <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div>
-          <p className="text-pretty break leading-8 text-xl mb-8">
-            ¡Hola! Soy Francis. 👋 Desarrollador Fullstack con la mirada puesta
-            en el detalle y el rendimiento. Me muevo con agilidad entre el
-            ecosistema de React y la modernidad de Nuxt, lo que me permite
-            elegir la mejor herramienta para cada desafío técnico.
-          </p>
-          <p className="text-pretty break leading-8 text-xl mb-8">
-            Trabajo de forma independiente, transformando requisitos técnicos en
-            experiencias digitales escalables y de alto rendimiento. Si buscas
-            una mezcla de arquitectura sólida y diseño impecable, estás en el
-            lugar correcto.
-          </p>
-          <p className="text-pretty break leading-8 text-xl mb-8">
-            Mi stack técnico se basa en la velocidad y la seguridad. En el
-            backend, construyo APIs ligeras y ultrarrápidas con{" "}
-            <span className="text-foreground font-semibold">Hono</span> y{" "}
-            <span className="text-foreground font-semibold">NestJS</span>,
-            optimizando el acceso a datos mediante{" "}
-            <span className="text-foreground font-semibold">Drizzle ORM</span> y{" "}
-            <span className="text-foreground font-semibold">Prisma</span>. Soy
-            un firme defensor de la integridad del código, por lo que utilizo{" "}
-            <span className="text-foreground font-semibold">TypeScript</span> y{" "}
-            <span className="text-foreground font-semibold">Zod</span> para
-            garantizar aplicaciones robustas desde la base.
-          </p>
-
-          <p className="text-pretty break leading-8 text-xl mb-8">
-            Más allá del código, domino el ecosistema de datos moderno con{" "}
-            <span className="text-foreground font-semibold">PostgreSQL</span>,{" "}
-            <span className="text-foreground font-semibold">Turso</span> y{" "}
-            <span className="text-foreground font-semibold">Supabase</span>,
-            aprovechando herramientas como{" "}
-            <span className="text-foreground font-semibold">Redis</span> para el
-            almacenamiento en caché de alto rendimiento. Todo esto lo orquesto
-            en entornos locales con{" "}
-            <span className="text-foreground font-semibold">Docker</span> y lo
-            despliego con confianza en{" "}
-            <span className="text-foreground font-semibold">Vercel</span> o{" "}
-            <span className="text-foreground font-semibold">Netlify</span>,
-            asegurando que cada proyecto sea escalable, accesible y esté
-            optimizado para el mundo real.
-          </p>
-          <p className="text-pretty break leading-8 text-xl mb-8">
-            Mi enfoque actual se centra en{" "}
-            <span className="text-foreground font-semibold">
-              democratizar la tecnología compleja
-            </span>
-            , desarrollando soluciones que van desde{" "}
-            <span className="text-foreground font-semibold">
-              tutores pedagógicos con IA
-            </span>{" "}
-            hasta
-            <span className="text-foreground font-semibold">
-              generadores automatizados de documentos legales
-            </span>
-            . Mi objetivo es convertir la potencia de los modelos de lenguaje en
-            herramientas prácticas,{" "}
-            <span className="text-foreground font-semibold">
-              accesibles y seguras
-            </span>
-            para el mundo real.
-          </p>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-20">
-            <div className="mb-6">
-              <h2 className="text-2xl font-semibold mb-6">Habilidades.</h2>
-              <div className="flex items-center gap-4 flex-wrap">
-                <h3 className="text-xl font-semibold my-3 block w-full">
-                  Frontend
-                </h3>
-                {skills.map(
-                  (skill) =>
-                    skill.category === "frontend" && (
-                      <Tooltip key={skill.name}>
-                        <TooltipTrigger asChild>
-                          <span>
-                            {isDarkMode && skill.darkIcon
-                              ? skill.darkIcon({ className: "w-8 h-8" })
-                              : skill.icon({ className: "w-8 h-8" })}
-                            <span className="sr-only">{skill.name}</span>
-                          </span>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{skill.name}</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    )
-                )}
-                <h3 className="text-xl font-semibold my-3 block w-full">
-                  Backend
-                </h3>
-                {skills.map(
-                  (skill) =>
-                    skill.category === "backend" && (
-                      <Tooltip key={skill.name}>
-                        <TooltipTrigger asChild>
-                          <span>
-                            {isDarkMode && skill.darkIcon
-                              ? skill.darkIcon({ className: "w-8 h-8" })
-                              : skill.icon({ className: "w-8 h-8" })}
-                            <span className="sr-only">{skill.name}</span>
-                          </span>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{skill.name}</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    )
-                )}
-                <h3 className="text-xl font-semibold my-3 block w-full">
-                  Base de datos
-                </h3>
-                {skills.map(
-                  (skill) =>
-                    skill.category === "database" && (
-                      <Tooltip key={skill.name}>
-                        <TooltipTrigger asChild>
-                          <span>
-                            {isDarkMode && skill.darkIcon
-                              ? skill.darkIcon({ className: "w-8 h-8" })
-                              : skill.icon({ className: "w-8 h-8" })}
-                            <span className="sr-only">{skill.name}</span>
-                          </span>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{skill.name}</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    )
-                )}
-                <h3 className="text-xl font-semibold my-3 block w-full">Cms</h3>
-                {skills.map(
-                  (skill) =>
-                    skill.category === "cms" && (
-                      <Tooltip key={skill.name}>
-                        <TooltipTrigger asChild>
-                          <span>
-                            {isDarkMode && skill.darkIcon
-                              ? skill.darkIcon({ className: "w-8 h-8" })
-                              : skill.icon({ className: "w-8 h-8" })}
-                            <span className="sr-only">{skill.name}</span>
-                          </span>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{skill.name}</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    )
-                )}
-                <h3 className="text-xl font-semibold my-3 block w-full">
-                  Herramientas
-                </h3>
-                {skills.map(
-                  (skill) =>
-                    skill.category === "tools" && (
-                      <Tooltip key={skill.name}>
-                        <TooltipTrigger asChild>
-                          <span>
-                            {isDarkMode && skill.darkIcon
-                              ? skill.darkIcon({ className: "w-8 h-8" })
-                              : skill.icon({ className: "w-8 h-8" })}
-                            <span className="sr-only">{skill.name}</span>
-                          </span>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{skill.name}</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    )
-                )}
-
-                <h3 className="text-xl font-semibold my-3 block w-full">
-                  Diseño
-                </h3>
-                {skills.map(
-                  (skill) =>
-                    skill.category === "design" && (
-                      <Tooltip key={skill.name}>
-                        <TooltipTrigger asChild>
-                          <span>
-                            {isDarkMode && skill.darkIcon
-                              ? skill.darkIcon({ className: "w-8 h-8" })
-                              : skill.icon({ className: "w-8 h-8" })}
-                            <span className="sr-only">{skill.name}</span>
-                          </span>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{skill.name}</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    )
-                )}
-
-                <h3 className="text-xl font-semibold my-3 block w-full">
-                  Hosting
-                </h3>
-                {skills.map(
-                  (skill) =>
-                    skill.category === "hosting" && (
-                      <Tooltip key={skill.name}>
-                        <TooltipTrigger asChild>
-                          <span>
-                            {isDarkMode && skill.darkIcon
-                              ? skill.darkIcon({ className: "w-8 h-8" })
-                              : skill.icon({ className: "w-8 h-8" })}
-                            <span className="sr-only">{skill.name}</span>
-                          </span>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{skill.name}</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    )
-                )}
-              </div>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold mb-6">Redes sociales.</h2>
-              <div className="flex items-center gap-4 flex-wrap">
-                {social.map((social) => (
-                  <Tooltip key={social.name}>
+          <h3 className="mb-6 text-2xl font-semibold">Habilidades</h3>
+          <div className="flex items-center gap-4 flex-wrap">
+            <h3 className="text-xl font-semibold my-3 block w-full">
+              Frontend
+            </h3>
+            {skills.map(
+              (skill) =>
+                skill.category === "frontend" && (
+                  <Tooltip key={skill.name}>
                     <TooltipTrigger asChild>
-                      <a
-                        href={social.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {isDarkMode && social.darkIcon
-                          ? social.darkIcon({ className: "w-8 h-8" })
-                          : social.icon({ className: "w-8 h-8" })}
-                        <span className="sr-only">{social.name}</span>
-                      </a>
+                      <span>
+                        {isDarkMode && skill.darkIcon
+                          ? skill.darkIcon({ className: "w-8 h-8" })
+                          : skill.icon({ className: "w-8 h-8" })}
+                        <span className="sr-only">{skill.name}</span>
+                      </span>
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>{social.name}</p>
+                      <p>{skill.name}</p>
                     </TooltipContent>
                   </Tooltip>
-                ))}
+                )
+            )}
+            <h3 className="text-xl font-semibold my-3 block w-full">Backend</h3>
+            {skills.map(
+              (skill) =>
+                skill.category === "backend" && (
+                  <Tooltip key={skill.name}>
+                    <TooltipTrigger asChild>
+                      <span>
+                        {isDarkMode && skill.darkIcon
+                          ? skill.darkIcon({ className: "w-8 h-8" })
+                          : skill.icon({ className: "w-8 h-8" })}
+                        <span className="sr-only">{skill.name}</span>
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                )
+            )}
+            <h3 className="text-xl font-semibold my-3 block w-full">
+              Base de datos
+            </h3>
+            {skills.map(
+              (skill) =>
+                skill.category === "database" && (
+                  <Tooltip key={skill.name}>
+                    <TooltipTrigger asChild>
+                      <span>
+                        {isDarkMode && skill.darkIcon
+                          ? skill.darkIcon({ className: "w-8 h-8" })
+                          : skill.icon({ className: "w-8 h-8" })}
+                        <span className="sr-only">{skill.name}</span>
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                )
+            )}
+            <h3 className="text-xl font-semibold my-3 block w-full">Cms</h3>
+            {skills.map(
+              (skill) =>
+                skill.category === "cms" && (
+                  <Tooltip key={skill.name}>
+                    <TooltipTrigger asChild>
+                      <span>
+                        {isDarkMode && skill.darkIcon
+                          ? skill.darkIcon({ className: "w-8 h-8" })
+                          : skill.icon({ className: "w-8 h-8" })}
+                        <span className="sr-only">{skill.name}</span>
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                )
+            )}
+            <h3 className="text-xl font-semibold my-3 block w-full">
+              Herramientas
+            </h3>
+            {skills.map(
+              (skill) =>
+                skill.category === "tools" && (
+                  <Tooltip key={skill.name}>
+                    <TooltipTrigger asChild>
+                      <span>
+                        {isDarkMode && skill.darkIcon
+                          ? skill.darkIcon({ className: "w-8 h-8" })
+                          : skill.icon({ className: "w-8 h-8" })}
+                        <span className="sr-only">{skill.name}</span>
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                )
+            )}
 
-                <div className="mt-6">
-                  <ExperienceTimeline />
-                </div>
-              </div>
+            <h3 className="text-xl font-semibold my-3 block w-full">Diseño</h3>
+            {skills.map(
+              (skill) =>
+                skill.category === "design" && (
+                  <Tooltip key={skill.name}>
+                    <TooltipTrigger asChild>
+                      <span>
+                        {isDarkMode && skill.darkIcon
+                          ? skill.darkIcon({ className: "w-8 h-8" })
+                          : skill.icon({ className: "w-8 h-8" })}
+                        <span className="sr-only">{skill.name}</span>
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                )
+            )}
+
+            <h3 className="text-xl font-semibold my-3 block w-full">Hosting</h3>
+            {skills.map(
+              (skill) =>
+                skill.category === "hosting" && (
+                  <Tooltip key={skill.name}>
+                    <TooltipTrigger asChild>
+                      <span>
+                        {isDarkMode && skill.darkIcon
+                          ? skill.darkIcon({ className: "w-8 h-8" })
+                          : skill.icon({ className: "w-8 h-8" })}
+                        <span className="sr-only">{skill.name}</span>
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                )
+            )}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="mb-6 text-2xl font-semibold">Redes sociales</h3>
+          <div className="flex items-center gap-4 flex-wrap">
+            {social.map((social) => (
+              <Tooltip key={social.name}>
+                <TooltipTrigger asChild>
+                  <a
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {isDarkMode && social.darkIcon
+                      ? social.darkIcon({ className: "w-8 h-8" })
+                      : social.icon({ className: "w-8 h-8" })}
+                    <span className="sr-only">{social.name}</span>
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{social.name}</p>
+                </TooltipContent>
+              </Tooltip>
+            ))}
+
+            <div className="mt-10">
+              <ExperienceTimeline />
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

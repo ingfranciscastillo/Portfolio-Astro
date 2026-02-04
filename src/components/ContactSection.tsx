@@ -18,6 +18,7 @@ import {
   FormMessage,
 } from "./ui/form";
 import { useEffect, useState } from "react";
+import { Section } from "./Section";
 
 const TurnstileWidget = ({
   onVerify,
@@ -164,151 +165,147 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contacto" className="py-32">
-      <div className="mx-auto max-w-3xl px-8 lg:px-0">
-        <h1 className="text-center text-4xl font-semibold lg:text-5xl">
-          Contactame!
-        </h1>
-        <p className="mt-4 text-center">
-          ¿Tienes preguntas o necesitas ayuda? ¡Estamos aquí para ayudarte!
-        </p>
+    <Section
+      id="contacto"
+      title="¡Contáctame!"
+      subtitle="¿Tienes preguntas o necesitas ayuda? Escríbeme y te respondo."
+      contentClassName="flex justify-center"
+    >
+      <Card className="w-full max-w-xl p-8 shadow-md sm:p-12">
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold">¿Listo para comenzar?</h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Contactame y te responderé lo antes posible.
+          </p>
+        </div>
 
-        <Card className="mx-auto mt-12 max-w-lg p-8 shadow-md sm:p-16">
-          <div>
-            <h2 className="text-xl font-semibold">¿Listo para comenzar?</h2>
-            <p className="mt-4 text-sm">
-              Contactame y te responderé lo antes posible.
-            </p>
-          </div>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Nombre Completo</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Juan Pérez" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Correo Electrónico</FormLabel>
+                  <FormControl>
+                    <Input placeholder="juan.perez@example.com" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Teléfono</FormLabel>
+                  <FormControl>
+                    <Input placeholder="+1 (555) 123-4567" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Nombre Completo</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Juan Pérez" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Correo Electrónico</FormLabel>
-                    <FormControl>
-                      <Input placeholder="juan.perez@example.com" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Teléfono</FormLabel>
-                    <FormControl>
-                      <Input placeholder="+1 (555) 123-4567" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+            <FormField
+              control={form.control}
+              name="subject"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Asunto</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Asunto del mensaje" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="subject"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Asunto</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Asunto del mensaje" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Mensaje</FormLabel>
-                    <FormControl>
-                      <Textarea
-                        rows={4}
-                        placeholder="Escribe tu mensaje aquí..."
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="website"
-                render={({ field }) => (
-                  <div
-                    style={{ position: "absolute", left: "-9999px" }}
-                    aria-hidden="true"
-                  >
-                    <Input
-                      type="text"
-                      tabIndex={-1}
-                      autoComplete="off"
+            <FormField
+              control={form.control}
+              name="message"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Mensaje</FormLabel>
+                  <FormControl>
+                    <Textarea
+                      rows={4}
+                      placeholder="Escribe tu mensaje aquí..."
                       {...field}
                     />
-                  </div>
-                )}
-              />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <div className="flex justify-center">
-                <TurnstileWidget
-                  onVerify={(token) => {
-                    setTurnstileToken(token);
-                    form.setValue("turnstileToken", token);
-                  }}
-                  onError={() => {
-                    setTurnstileToken("");
-                    form.setValue("turnstileToken", "");
-                  }}
-                  onExpire={() => {
-                    setTurnstileToken("");
-                    form.setValue("turnstileToken", "");
-                  }}
-                />
-              </div>
-
-              {submitStatus.type && (
+            <FormField
+              control={form.control}
+              name="website"
+              render={({ field }) => (
                 <div
-                  className={`rounded-md p-4 ${
-                    submitStatus.type === "success"
-                      ? "bg-green-50 text-green-800 dark:bg-green-900/20 dark:text-green-400"
-                      : "bg-red-50 text-red-800 dark:bg-red-900/20 dark:text-red-400"
-                  }`}
+                  style={{ position: "absolute", left: "-9999px" }}
+                  aria-hidden="true"
                 >
-                  {submitStatus.message}
+                  <Input
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    {...field}
+                  />
                 </div>
               )}
+            />
 
-              <Button type="submit" disabled={isSubmitting} className="w-full">
-                {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
-              </Button>
-            </form>
-          </Form>
-        </Card>
-      </div>
-    </section>
+            <div className="flex justify-center">
+              <TurnstileWidget
+                onVerify={(token) => {
+                  setTurnstileToken(token);
+                  form.setValue("turnstileToken", token);
+                }}
+                onError={() => {
+                  setTurnstileToken("");
+                  form.setValue("turnstileToken", "");
+                }}
+                onExpire={() => {
+                  setTurnstileToken("");
+                  form.setValue("turnstileToken", "");
+                }}
+              />
+            </div>
+
+            {submitStatus.type && (
+              <div
+                className={`rounded-md p-4 ${
+                  submitStatus.type === "success"
+                    ? "bg-green-50 text-green-800 dark:bg-green-900/20 dark:text-green-400"
+                    : "bg-red-50 text-red-800 dark:bg-red-900/20 dark:text-red-400"
+                }`}
+              >
+                {submitStatus.message}
+              </div>
+            )}
+
+            <Button type="submit" disabled={isSubmitting} className="w-full">
+              {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
+            </Button>
+          </form>
+        </Form>
+      </Card>
+    </Section>
   );
 }
