@@ -67,6 +67,7 @@ import { X } from "./ui/svgs/x";
 import { XDark } from "./ui/svgs/xDark";
 import { Threads } from "./ui/svgs/threads";
 import { ThreadsDark } from "./ui/svgs/threadsDark";
+import ExperienceTimeline from "./Timeline";
 
 const skills = [
   { name: "Astro", icon: Astro, darkIcon: AstroDark, category: "frontend" },
@@ -456,6 +457,10 @@ const AboutMeSection = () => {
                     </TooltipContent>
                   </Tooltip>
                 ))}
+
+                <div className="mt-6">
+                  <ExperienceTimeline />
+                </div>
               </div>
             </div>
           </div>
