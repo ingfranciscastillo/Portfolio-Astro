@@ -20,8 +20,8 @@ import { Strapi } from "./ui/svgs/strapi";
 import { Mongodb } from "./ui/svgs/mongodb";
 import { TursoLight } from "./ui/svgs/tursoLight";
 import { TursoDark } from "./ui/svgs/tursoDark";
-import { Vercel } from "./ui/svgs/vercel";
-import { VercelDark } from "./ui/svgs/vercelDark";
+import { VercelWordmark } from "./ui/svgs/vercelWordmark";
+import { VercelWordmarkDark } from "./ui/svgs/vercelWordmarkDark";
 import { ReactLight } from "./ui/svgs/reactLight";
 import { ReactDark } from "./ui/svgs/reactDark";
 import { Preact } from "./ui/svgs/preact";
@@ -52,8 +52,10 @@ import { N8n } from "./ui/svgs/n8n";
 import { Firebase } from "./ui/svgs/firebase";
 import { Vitest } from "./ui/svgs/vitest";
 import { Vite } from "./ui/svgs/vite";
-import { SanityLight } from "./ui/svgs/sanityLight";
-import { SanityDark } from "./ui/svgs/sanityDark";
+import { SanityWordmarkLight } from "./ui/svgs/sanityWordmarkLight";
+import { SanityWordmarkDark } from "./ui/svgs/sanityWordmarkDark";
+import { Golang } from "./ui/svgs/golang";
+import { GolangDark } from "./ui/svgs/golangDark";
 
 // Social Icons
 import { GithubLight } from "./ui/svgs/githubLight";
@@ -102,8 +104,8 @@ const skills = [
   },
   {
     name: "Vercel",
-    icon: Vercel,
-    darkIcon: VercelDark,
+    icon: VercelWordmark,
+    darkIcon: VercelWordmarkDark,
     category: "hosting",
   },
   {
@@ -148,9 +150,15 @@ const skills = [
   { name: "Figma", icon: Figma, category: "design" },
   { name: "n8n", icon: N8n, category: "tools" },
   { name: "Firebase", icon: Firebase, category: "backend" },
-  { name: "Sanity", icon: SanityLight, darkIcon: SanityDark, category: "cms" },
+  {
+    name: "Sanity",
+    icon: SanityWordmarkLight,
+    darkIcon: SanityWordmarkDark,
+    category: "cms",
+  },
   { name: "Vite", icon: Vite, category: "tools" },
   { name: "Vitest", icon: Vitest, category: "tools" },
+  { name: "Golang", icon: Golang, darkIcon: GolangDark, category: "backend" },
 ];
 
 const social = [
@@ -380,6 +388,29 @@ const AboutMeSection = () => {
                       </Tooltip>
                     )
                 )}
+
+                <h3 className="text-xl font-semibold my-3 block w-full">
+                  Diseño
+                </h3>
+                {skills.map(
+                  (skill) =>
+                    skill.category === "design" && (
+                      <Tooltip key={skill.name}>
+                        <TooltipTrigger asChild>
+                          <span>
+                            {isDarkMode && skill.darkIcon
+                              ? skill.darkIcon({ className: "w-8 h-8" })
+                              : skill.icon({ className: "w-8 h-8" })}
+                            <span className="sr-only">{skill.name}</span>
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{skill.name}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    )
+                )}
+
                 <h3 className="text-xl font-semibold my-3 block w-full">
                   Hosting
                 </h3>
