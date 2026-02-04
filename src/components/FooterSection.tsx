@@ -23,7 +23,7 @@ export default function FooterSection() {
       <div className="mx-auto max-w-5xl px-6">
         <a href="/" aria-label="go home" className="mx-auto block size-fit">
           <img
-            src={isDarkMode ? "/favicon-dark.png" : "/favicon-white.png"}
+            src={isDarkMode ? "/favicon-white.png" : "/favicon-black.png"}
             alt="logo"
             className="h-10 w-auto"
           />
