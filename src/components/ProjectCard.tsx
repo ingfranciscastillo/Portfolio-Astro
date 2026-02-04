@@ -23,9 +23,8 @@ const ProjectCard = ({
   githubUrl,
   index,
 }: ProjectCardProps) => {
-
   const [isDarkMode, setIsDarkMode] = React.useState(false);
-  const imageSrc = typeof image === 'string' ? image : image.src;
+  const imageSrc = typeof image === "string" ? image : image.src;
 
   React.useEffect(() => {
     setIsDarkMode(document.documentElement.classList.contains("dark"));
@@ -57,7 +56,7 @@ const ProjectCard = ({
           className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60" />
-        
+
         {/* Overlay links */}
         <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           {liveUrl && (
@@ -79,13 +78,11 @@ const ProjectCard = ({
               className="p-3 rounded-full bg-secondary text-secondary-foreground hover:scale-110 transition-transform duration-200"
               aria-label="Ver código en GitHub"
             >
-              {
-                isDarkMode ? (
-                    <GithubDark className="size-5" />
-                ): (
-                    <GithubLight className="size-5"/>
-                )
-              }
+              {isDarkMode ? (
+                <GithubDark className="size-5" />
+              ) : (
+                <GithubLight className="size-5" />
+              )}
             </a>
           )}
         </div>
@@ -99,7 +96,7 @@ const ProjectCard = ({
         <p className="text-muted-foreground text-sm leading-relaxed mb-4">
           {description}
         </p>
-        
+
         {/* Tags */}
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (

@@ -1,14 +1,37 @@
+import { useEffect, useState } from "react";
+
 export default function FooterSection() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    setIsDarkMode(document.documentElement.classList.contains("dark"));
+
+    const observer = new MutationObserver(() => {
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <footer className="py-16 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
         <a href="/" aria-label="go home" className="mx-auto block size-fit">
-          <img src="/favicon-black.png" alt="logo" className="h-10 w-auto" />
+          <img
+            src={isDarkMode ? "/favicon-dark.png" : "/favicon-white.png"}
+            alt="logo"
+            className="h-10 w-auto"
+          />
         </a>
 
         <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
           <a
-            href="#"
+            href="https://www.x.com/ingfranciscas"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X/Twitter"

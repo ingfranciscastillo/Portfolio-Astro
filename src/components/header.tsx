@@ -42,11 +42,11 @@ export const HeroHeader = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                {isDarkMode ? (
-                  <img src="/favicon-white.png" className="size-8" alt="Logo" />
-                ) : (
-                  <img src="/favicon-black.png" className="size-8" alt="Logo" />
-                )}
+                <img
+                  src={isDarkMode ? "/favicon-white.png" : "/favicon-black.png"}
+                  alt="logo"
+                  className="size-8"
+                />
               </a>
 
               <button

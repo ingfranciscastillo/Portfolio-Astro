@@ -10,7 +10,16 @@ import pactumImg from "@/assets/Projects/pactumAI.png";
 import breveUrlImg from "@/assets/Projects/breveUrl.png";
 import talegridImg from "@/assets/Projects/talegrid.png";
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  image: ImageMetadata;
+  tags: Array<string>;
+  liveUrl: string;
+  githubUrl?: string;
+}
+
+const projects: Project[] = [
   {
     title: "ResumeSense: AI para CVs",
     description:
@@ -65,7 +74,7 @@ const projects = [
     githubUrl: "https://github.com/ingfranciscastillo/postapocalipsis-rpg",
   },
   {
-    title: "Tutor IA",
+    title: "Tutor IA: tutores IA personalizados",
     description:
       "Plataforma de aprendizaje que utiliza IA generativa para resolver dudas académicas según el nivel educativo.",
     image: tutorIAImg,
@@ -88,7 +97,7 @@ const projects = [
     image: breveUrlImg,
     tags: ["Astro", "Fastify", "Preact", "Shadcn UI", "REST API"],
     liveUrl: "https://breveurl.netlify.app/",
-    githubUrl: "https://github.com/ingfranciscastillo/frontend-url-shortener",
+    githubUrl: "https://github.com/ingfranciscastillo/fullstack-url-shortener",
   },
   {
     title: "TaleGrid: Creación de historias interactivas",
@@ -97,7 +106,6 @@ const projects = [
     image: talegridImg,
     tags: ["tRPC", "Nextjs", "Better Auth", "Cloudflare", "tRPC", "PostgreSQL"],
     liveUrl: "https://www.talegrid.app/",
-    githubUrl: "#",
   },
 ];
 
